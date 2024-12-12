@@ -1,16 +1,35 @@
 ---
-
+import Form from '../components/Form.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import HowToStart from '../components/HowToStart.astro';
+import LogoCarousel from '../components/LogoCarousel.astro';
+import OneColumnText from '../components/OneColumnText.astro';
+import Prices from '../components/Prices.astro';
+import ProofCompany from '../components/ProofCompany.astro';
+import ServicesBoxes from '../components/ServicesBoxes.astro';
+import Testimonials from '../components/Testimonials.astro';
+import TwoColumnImgRight from '../components/TwoColumnImgRight.astro';
+import TwoColumnLeft from '../components/TwoColumnLeft.astro';
+import Footer from '../layout/footer.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<SiteLayout>
+    <Header />
+    <Hero />
+    <div style="background-image: url(http://grafit.co.uk/grafit-portal/images/background.png); position: relative;">
+        <LogoCarousel />
+
+        <ServicesBoxes />
+        <HowToStart />
+        <Testimonials />
+        <Prices />
+        <Form />
+        <TwoColumnImgRight />
+        <OneColumnText />
+        <TwoColumnLeft />
+        <ProofCompany />
+    </div>
+    <Footer />
+</SiteLayout>

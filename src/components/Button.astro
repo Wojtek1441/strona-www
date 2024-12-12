@@ -1,0 +1,179 @@
+<button
+    class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+>
+    <span
+        class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+    >
+        <slot />
+    </span>
+</button>
+
+<!-- <style>
+    button {
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    button {
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        border: none;
+        font-size: 24px;
+        transition:
+            color 0.5s,
+            transform 0.2s,
+            background-color 0.2s;
+        outline: none;
+        margin: 0 10px;
+        padding: 23px 33px;
+        border: 3px solid transparent;
+
+        position: relative;
+        z-index: 10;
+    }
+
+    button:active {
+        transform: translateY(3px);
+    }
+
+    .shrink-border {
+        background-color: transparent;
+        color: #fff;
+        max-width: 440px;
+        margin: 0 auto;
+    }
+
+    .shrink-border:hover {
+        background-color: transparent;
+        box-shadow: none;
+        font-weight: bold;
+        color: #d02fe1;
+    }
+
+    .shrink-border::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #d02fe1;
+        transition:
+            opacity 0.3s,
+            border 0.3s;
+    }
+
+    .shrink-border:hover::before {
+        opacity: 0;
+    }
+
+    .shrink-border::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: 3px solid #e6e6e6;
+        opacity: 0;
+        z-index: -1;
+        transform: scaleX(1.1) scaleY(1.3);
+        transition:
+            transform 0.3s,
+            opacity 0.3s;
+    }
+
+    .shrink-border:hover::after {
+        opacity: 1;
+        transform: scaleX(1) scaleY(1);
+    }
+
+    .material-bubble {
+        background-color: transparent;
+        color: #d02fe1;
+        border: none;
+        overflow: hidden;
+        box-shadow: none;
+    }
+
+    .material-bubble:hover {
+        color: #fff;
+    }
+
+    .material-bubble::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 98%;
+        height: 87%;
+        border: 3px solid #d02fe1;
+        transition:
+            opacity 0.3s,
+            border 0.3s;
+    }
+
+    .material-bubble:hover::before {
+        opacity: 0;
+    }
+
+    .material-bubble::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 480px;
+        height: 226px;
+        background-color: #d02fe1;
+        border-color: transparent;
+        transform: translate(-220px, -639px) scale(0.1);
+        border-radius: 40%;
+
+        opacity: 0;
+        z-index: -1;
+        transition:
+            transform 0.3s,
+            opacity 0.3s,
+            background-color 0.3s;
+    }
+
+    .material-bubble:hover::after {
+        opacity: 1;
+        transform-origin: 100px 100px;
+        transform: scale(1) translate(-10px, -70px);
+    }
+
+    /* end buttons */
+
+    .pink-button {
+        padding: 22px 45px;
+        transition: #d02fe1 0.5s ease;
+        background-color: #d02fe1;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .pink-button2 {
+        padding: 22px 45px;
+        transition: #d02fe1 0.5s ease;
+        border: 2px solid #d02fe1;
+        text-transform: uppercase;
+        color: #fff;
+        float: left;
+    }
+
+    .pink-button2 a {
+        color: #d02fe1;
+        font-weight: 800;
+    }
+
+    .pink-button a {
+        color: #fff;
+        font-weight: 800;
+    }
+
+    a.pink-button:hover {
+        background: #512fe1;
+    }
+</style> -->
