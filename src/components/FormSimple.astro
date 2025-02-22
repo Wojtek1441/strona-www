@@ -1,0 +1,124 @@
+<div class="container text-center max-lg:w-full w-1/2 mx-auto">
+    <form
+        class="flex-col justify-center gap-7 mx-auto my-8"
+        action="https://www.form-to-email.com/api/s/JZyA1QySaCrr"
+        method="POST"
+    >
+        <fieldset id="pageToShow2">
+            <h3 class="font-semibold text-2xl text-center mt-4 mb-7">Z kim się kontaktujemy?</h3>
+            <div
+                class="page horizontal flex-col gap-3"
+                data-nextpage="2"
+            >
+                <label for="imie">Imię/ Nazwa Firmy:</label>
+                <input
+                    id="imie"
+                    type="text"
+                    value=""
+                    name="name"
+                    required
+                />
+                <label for="email">Email:</label>
+                <input
+                    id="email"
+                    type="email"
+                    value=""
+                    name="email"
+                    required
+                />
+                <label for="tel">Telefon:</label>
+                <input
+                    id="tel"
+                    type="tel"
+                    name="tel"
+                    required
+                />
+                <label for="message">Wiadomość:</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    required
+                ></textarea>
+                <button
+                    type="submit"
+                    title="contact button"
+                    id="kontakt-btn"
+                    class="text-white bg-gradient-to-r from-indigo-500 via-blue-500 to-pink-500 hover:bg-[position:_100%_100%] bg-[size:_200%] transition-all focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium text-sm px-5 py-3 text-center mb-2"
+                    >Potwierdź</button
+                >
+            </div>
+        </fieldset>
+    </form>
+</div>
+<style>
+    .big-icon {
+        display: flex;
+        justify-content: center;
+        color: #ededed;
+    }
+    .big-icon span {
+        font-size: 980px;
+        transform: rotate(270deg);
+        line-height: 0;
+    }
+
+    form label {
+        border: 1px solid #d02fe1;
+        width: 220px;
+        height: 200px;
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        line-height: 1em;
+        text-align: center;
+        font-size: 28px;
+        background-color: #fff;
+    }
+
+    label:hover,
+    label:checked,
+    input:checked + label {
+        background: linear-gradient(35deg, #d200ff, #e7134f);
+        /* background-color: #d02fe1; */
+        color: #fff;
+    }
+
+    .page.horizontal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .page.horizontal input,
+    .page.horizontal textarea {
+        /* width: 100%;
+    /* height: 30px !important;
+    margin: 0 auto;
+    height: auto; */
+        padding: 10px;
+        border: 2px solid #f72763;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .page.horizontal label {
+        border: none;
+        width: auto;
+        height: auto;
+        display: block;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        line-height: 1em;
+        text-align: left;
+        font-size: 22px;
+    }
+
+    .page.horizontal label:hover {
+        background: white;
+        color: black;
+        cursor: default;
+    }
+</style>

@@ -2,7 +2,7 @@
 import { menu } from '../utils/utils';
 import MobileMenu from './MobileMenu.astro';
 import { Image } from 'astro:assets';
-import logo from './../images/logo.png';
+import logo from './../images/logo.svg';
 ---
 
 <header class="bg-black flex justify-between items-center p-4 gap-8">
@@ -12,7 +12,7 @@ import logo from './../images/logo.png';
     >
         <Image
             class="w-60 max-w-full"
-            alt="logo"
+            alt="logo grafit"
             src={logo}
         />
     </a>
@@ -22,6 +22,7 @@ import logo from './../images/logo.png';
                 menu.map((item) => (
                     <li>
                         <a
+                            title={item.title}
                             class="text-white border-b transition-all border-transparent hover:border-white"
                             href={item.url}
                         >
@@ -32,14 +33,5 @@ import logo from './../images/logo.png';
             }
         </ul>
         <MobileMenu />
-
-        <!-- <div class="flex gap-4">
-            <p class="text-white">
-                <a href="tel:07935812988">Tel</a>
-            </p>
-            <p class="text-white">
-                Email: <a href="mail:info@graf-it.co.uk">Wycena</a>
-            </p>
-        </div> -->
     </nav>
 </header>

@@ -1,48 +1,116 @@
-<div style="background-image: url(http://grafit.co.uk/grafit-portal/images/background.png); position: relative;">
+---
+import { Image } from 'astro:assets';
+import bg from './../images/background.png';
+import umbraco from './../images/logos/umbraco-logo.svg';
+import azure from './../images/logos/azure.svg';
+import opencart from './../images/logos/opencart.svg';
+import wordpress from './../images/logos/wordpress.svg';
+import shopify from './../images/logos/shopify.svg';
+import woocommerce from './../images/logos/woocommerce.svg';
+import joomla from './../images/logos/joomla.svg';
+---
+
+<div style="background-image: url('~/images/background.png'); position: relative;">
     <div class="container mx-auto">
         <div class="Marquee">
             <div class="Marquee-content">
                 <div class="Marquee-tag">
-                    <img src="http://grafit.co.uk/grafit-portal/images/logos/umbraco-logo.svg" />
+                    <Image
+                        class="max-w-full"
+                        alt="strony umbraco UK"
+                        src={umbraco}
+                    />
                 </div>
                 <div class="Marquee-tag">
-                    <img src="http://grafit.co.uk/grafit-portal/images/logos/azure.svg" />
+                    <Image
+                        class="max-w-full"
+                        alt="strony azure UK"
+                        src={azure}
+                    />
                 </div>
                 <div class="Marquee-tag">
-                    <img src="http://grafit.co.uk/grafit-portal/images/logos/opencart.svg" />
+                    <Image
+                        class="max-w-full"
+                        alt="strony opencart UK"
+                        src={opencart}
+                    />
                 </div>
                 <div class="Marquee-tag">
-                    <img src="http://grafit.co.uk/grafit-portal/images/logos/wordpress.svg" />
+                    <Image
+                        class="max-w-full"
+                        alt="strony wordpress UK"
+                        src={wordpress}
+                    />
                 </div>
                 <div class="Marquee-tag">
-                    <img src="http://grafit.co.uk/grafit-portal/images/logos/shopify.svg" />
+                    <Image
+                        class="max-w-full"
+                        alt="strony shopify UK"
+                        src={shopify}
+                    />
                 </div>
                 <div class="Marquee-tag">
-                    <img src="http://grafit.co.uk/grafit-portal/images/logos/woocommerce.svg" />
+                    <Image
+                        class="max-w-full"
+                        alt="strony woocommerce UK"
+                        src={woocommerce}
+                    />
                 </div>
                 <div class="Marquee-tag">
-                    <img src="http://grafit.co.uk/grafit-portal/images/logos/joomla.svg" />
+                    <Image
+                        class="max-w-full"
+                        alt="strony joomla UK"
+                        src={joomla}
+                    />
                 </div>
                 <div class="Marquee-tag">
-                    <img src="http://grafit.co.uk/grafit-portal/images/logos/umbraco-logo.svg" />
+                    <Image
+                        class="max-w-full"
+                        alt="strony umbraco UK"
+                        src={umbraco}
+                    />
                 </div>
                 <div class="Marquee-tag">
-                    <img src="http://grafit.co.uk/grafit-portal/images/logos/azure.svg" />
+                    <Image
+                        class="max-w-full"
+                        alt="strony azure UK"
+                        src={azure}
+                    />
                 </div>
                 <div class="Marquee-tag">
-                    <img src="http://grafit.co.uk/grafit-portal/images/logos/opencart.svg" />
+                    <Image
+                        class="max-w-full"
+                        alt="strony opencart UK"
+                        src={opencart}
+                    />
                 </div>
                 <div class="Marquee-tag">
-                    <img src="http://grafit.co.uk/grafit-portal/images/logos/wordpress.svg" />
+                    <Image
+                        class="max-w-full"
+                        alt="strony wordpress UK"
+                        src={wordpress}
+                    />
                 </div>
                 <div class="Marquee-tag">
-                    <img src="http://grafit.co.uk/grafit-portal/images/logos/shopify.svg" />
+                    <Image
+                        class="max-w-full"
+                        alt="strony shopify UK"
+                        src={shopify}
+                    />
                 </div>
                 <div class="Marquee-tag">
-                    <img src="http://grafit.co.uk/grafit-portal/images/logos/woocommerce.svg" />
+                    <Image
+                        class="max-w-full"
+                        alt="strony woocommerce UK"
+                        src={woocommerce}
+                    />
                 </div>
                 <div class="Marquee-tag">
-                    <img src="http://grafit.co.uk/grafit-portal/images/logos/joomla.svg" />
+                    <Image
+                        class="max-w-full"
+                        alt="strony joomla UK"
+                        src={joomla}
+                    />
                 </div>
             </div>
         </div>
@@ -90,11 +158,7 @@
             margin: 0 0.5em;
             padding: 0.5em;
             background: rgba(255, 255, 255, 0.1);
-            display: -webkit-inline-box;
-            display: -moz-inline-box;
-            display: -webkit-inline-flex;
-            display: -ms-inline-flexbox;
-            display: inline-box;
+
             display: inline-flex;
             -webkit-box-align: center;
             -moz-box-align: center;

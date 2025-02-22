@@ -1,0 +1,171 @@
+---
+import Header from '../../components/Header.astro';
+import HeroInner from '../../components/HeroInner.astro';
+import InnerPagesTwoColumnBg from '../../components/InnerPagesTwoColumnBg.astro';
+import OneColumnText from '../../components/OneColumnText.astro';
+import ThreeBottom from '../../components/ThreeBottom.astro';
+import TwoColumnImgRight from '../../components/TwoColumnImgRight.astro';
+import TwoColumnLeft from '../../components/TwoColumnLeft.astro';
+import Footer from '../../layout/footer.astro';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+const year = new Date().getFullYear();
+const title = 'Luton';
+---
+
+<SiteLayout
+    pageTitle=`Strony internetowe UK, Sklepy internetowe Londyn GrafIT - Sklepy Internetowe ${title}`
+    keywords=`sklepy internetowe ${title}, sklep internetowy ${title}, sklep ${title}, sklepy ${title}, sklep internetowy za darmo ${title}, tani sklep internetowy ${title}, tanie sklepy internetowe ${title}, sklepy online ${title}, sklep online ${title}, ecommerce ${title}, zrobienie sklepu internetowego ${title}, tworzenie sklepu internetowego ${title}, projektowanie sklepu internetowego ${title}, tworzenie sklepu ${title}, sklepu internetowego ${title}, sprzedaz przez internet ${title}, sprzedaż przez internet ${title}, jak zalozyc sklep internetowy u${title}k, jak założyc sklep internetowy ${title}, zalozenie sklepu internetowego ${title}, darmowe sklepy internetowe ${title}, ecommerce ${title}`
+    desc=`sklepy internetowe ${title}, sklep internetowy ${title}, sklep ${title}, sklepy ${title}, sklep internetowy ${title} darmo ${title}, tani sklep internetowy ${title}, tanie sklepy internetowe uk, sklepy online uk, sklep online uk, ecommerce uk, zrobienie sklepu internetowego uk, tworzenie sklepu internetowego ${title}, projektowanie sklepu internetowego ${title}, tworzenie sklepu ${title}, sklepu internetowego ${title}, sprzedaz przez internet ${title}, sprzedaż przez internet ${title}, jak zalozyc sklep internetowy ${title}, jak założyc sklep internetowy ${title}, zalozenie sklepu internetowego ${title}, darmowe sklepy internetowe ${title}, ecommerce ${title}`
+>
+    <Header />
+    <HeroInner
+        subtitle="Nowoczesne sklepy internetowe"
+        title1="Sklepy internetowe"
+        title2={title}
+    />
+    <!-- <LogoCarousel /> -->
+    <div class="container mx-auto my-20 px-5 md:px-0">
+        <p class="text-justify">
+            Chcialbyś zalożyć swój <strong>sklep internetowy w {title}</strong>? Nic prostszego! Sklep powinien być
+            wizytówką każdej firmy, wizualnie i funkcjonalnie atrakcyjną dla potencjalnych klientów. Dlatego każdy
+            stworzony przez nas sklep <strong>posiada unikalną, związaną z branżą oprawę graficzną</strong> , wyróżniającą
+            go na tle konkurencji. Oferujemy <strong
+                >tworzenie, projektowanie oraz wdrożenie sklepów internetowych
+            </strong>- kompleksową usługę gotowego sklepu.
+        </p>
+        <ul class="list-disc ml-5 my-5">
+            <li>Profesjonalna, estetyczna szata graficzna dostosowana do indywidualnych potrzeb</li>
+            <li>Intuicyjna nawigacja i nieograniczone możliwości administracyjne handlu online</li>
+            <li>Mozliwość edycji, dodawania, usuwania zdjec, produktow, kategorii</li>
+            <li>Płatności online za pośrednictwem różnych operatorów</li>
+            <li>Najbezpieczniejsze rozwiązania dla twoich pieniedzy</li>
+            <li>Ekonomiczny i tańszy niż tradycyjny biznes</li>
+            <li>Setki udogodnień związanych z promocją i pozycjonowaniem</li>
+            <li>Sprawdzone, szybko działające sklepy internetowe</li>
+        </ul>
+        <h2 class="text-gradient font-bold text-4xl mb-4 leading-13 md:leading-normal">
+            My wiemy, że zasługujesz na więcej!
+        </h2>
+        <p>
+            Planujesz założyć swój sklep internetowy w {title}? Nic prostszego! Zaprojektujemy dla Ciebie sklep
+            internetowy w najlepszej cenie! Oferujemy tworzenie, projektowanie oraz wdrożenie profesjonalnych sklepów
+            internetowych - kompleksową usługę ecommerce. Nasze sklepy internetowe to gwarancja bezpiecznego, szybkiego
+            i efektywnego systemu sprzedaży online. Doradzimy i zaproponujemy sprawdzone rozwiązania, z których z
+            powodzeniem korzysta już wiele firm i klientów indywidualnych. Dzięki naszemu doświadczeniu oraz najnowszemu
+            oprogramowaniu pomożemy Ci odnieść sukces w e-biznesie! Dziś pojęcie zakupów nieco się różni niż 10 lat temu
+            i nabiera jeszcze nowego znaczenia- wg ekspertów sklepy internetowe staną się głównym kanałem sprzedaży nie
+            tylko produktów ale także i usług w {year} roku. Nie czekaj- i Ty możesz zacząć zarabiać przez internet!
+        </p>
+        <h2 class="text-gradient font-bold text-4xl mb-4 leading-13 md:leading-normal">
+            Dlaczego nasze sklepy internetowe są lepsze od innych?
+        </h2>
+        <p class="mb-4">
+            Wygląd sklepu w ${title} tworzymy w oparciu o panujące w internecie trendy oraz najnowsze oprogramowanie Sklep
+            internetowy zawsze dostosowujemy do Twoich, indywidualnych potrzeb Nie używamy szablonów- tylko naszych autorskich
+            pomysłów.
+        </p>
+
+        <a
+            href="/kontakt"
+            title=`kontakt w sprawie sklepu interntetowego ${title}`
+            class="flex max-w-80 md:max-w-lg mt-6 text-white bg-gradient-to-r from-indigo-500 via-blue-500 to-pink-500 hover:bg-[position:_100%_100%] bg-[size:_200%] transition-all focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium text-sm px-5 py-3 text-center mb-2"
+        >
+            Zadzwoń, napisz! Zamów sklep internetowy z {title} już dziś!</a
+        >
+        <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+            <ul class="list-disc ml-5 my-5">
+                <p class="text-gradient font-bold text-2xl mb-4 leading-13 md:leading-normal">
+                    Administracja sklepu internetowego
+                </p>
+                <li>Nieograniczona ilość produktów Dodawanie</li>
+                <li>Dodawanie/ Edycja/ Usuwanie produktów, kategorii, producentów, klientów</li>
+                <li>Możliwość definiowania atrybutów produktów ( np.Kolory, rozmiary, wagi, modele)</li>
+                <li>Nieograniczona ilość kategorii, subkategorii oraz producentów</li>
+                <li>Mozliwość dodawania kilku zdjęć do jednego produktu</li>
+                <li>Wiele wersji językowych</li>
+                <li>Wiele opcji walutowych i opcji wysyłki</li>
+                <li>Opinie Klientów</li>
+                <li>System Recenzji</li>
+                <li>Kanal RSS</li>
+                <li>Wishlist</li>
+                <li>Newsletter</li>
+                <li>System zamówień i zwrotów produktów</li>
+                <li class="mb-4">Oraz wiele innych, przydatnych funkcji sklepu internetowego!!!</li>
+                <a
+                    href="/kontakt"
+                    title=`kontakt w sprawie sklepu interntetowego ${title}`
+                    class="mt-6 text-white bg-gradient-to-r from-indigo-500 via-blue-500 to-pink-500 hover:bg-[position:_100%_100%] bg-[size:_200%] transition-all focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium text-sm px-5 py-3 text-center mb-2"
+                >
+                    Zamów sklep internetowy</a
+                >
+            </ul>
+
+            <ul class="list-disc ml-5 my-5">
+                <p class="text-gradient font-bold text-2xl mb-4 leading-13 md:leading-normal">
+                    Bezpieczeństwo i funkcjonalność
+                </p>
+                <li>Najbezpieczniejsza wersja sprzedaży online na rynku</li>
+                <li>Szybka transakcja dla kupującego</li>
+                <li>Aktualizacje do sklepów Możliwość tworzenia kopii zapasowych</li>
+                <li>Możliwość zakupów bez rejestracji</li>
+                <li>Możliwość definiowania stanów magazynowych</li>
+                <li>Różne opcje płatnosci (np. karty kredytowe, paypal, sagepay)</li>
+                <li>Możliwość drukowania rachunku zamówienia z adresem do wysyłki</li>
+                <li class="mb-4">Szybkie i proste wyszukiwanie produktów</li>
+                <a
+                    href="/kontakt"
+                    title=`kontakt w sprawie sklepu interntetowego ${title}`
+                    class="mt-6 text-white bg-gradient-to-r from-indigo-500 via-blue-500 to-pink-500 hover:bg-[position:_100%_100%] bg-[size:_200%] transition-all focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium text-sm px-5 py-3 text-center mb-2"
+                >
+                    Zamów sklep internetowy</a
+                >
+            </ul>
+
+            <ul class="list-disc ml-5 my-5">
+                <p class="text-gradient font-bold text-2xl mb-4 leading-13 md:leading-normal">Dodatkowe opcje:</p>
+                <li>Oferujemy także szybki, sprawdzony hosting</li>
+                <li>Możliwość dodawania banerów reklamowych statycznych oraz dynamicznych</li>
+                <li>Statystyki produktów oraz zakupów dokonanych przez klientów</li>
+                <li>Lista bestsellerów - najlepiej sprzedających się produktów</li>
+                <li>Możliwość certikatu bezpieczeństwa SSL</li>
+                <li class="mb-4">Efektywne i przyjazne pozycjonowanie w wyszukiwarkach google, yahoo, bing, itd.</li>
+                <a
+                    href="/kontakt"
+                    title=`kontakt w sprawie sklepu interntetowego ${title}`
+                    class="mt-6 text-white bg-gradient-to-r from-indigo-500 via-blue-500 to-pink-500 hover:bg-[position:_100%_100%] bg-[size:_200%] transition-all focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium text-sm px-5 py-3 text-center mb-2"
+                >
+                    Zamów sklep internetowy</a
+                >
+            </ul>
+        </div>
+    </div>
+    <!--  <ServicesBoxes />
+    <HowToStart />
+    <Testimonials />
+    <Prices />
+    <Form /> -->
+    <TwoColumnImgRight
+        showPlural="true"
+        title="Dlaczego jesteśmy najlepsi?"
+        text="Szukasz profesjonalnej firmy z UK, która zaprojektuje nowoczesną i funkcjonalną stronę internetową? Grafit to idealne rozwiązanie dla Ciebie! Nasze strony internetowe wyróżniają się nie tylko atrakcyjną ceną, ale także wysoką jakością wykonania i nowoczesnym designem. Każdy projekt jest indywidualnie dopasowany do potrzeb klienta, zapewniając łatwą i intuicyjną obsługę. Dbamy o to, aby każda strona www była nie tylko estetyczna, ale także funkcjonalna, co przyczynia się do pozytywnego doświadczenia użytkownika i lepszego pozycjonowania w Google. Nasze strony internetowe charakteryzują się responsywnością, szybkością ładowania oraz optymalizacją pod kątem SEO, co sprawia, że Twoja firma zyskuje większą widoczność w internecie. Zapraszamy do kontaktu telefonicznego lub osobistego w naszej warszawskiej siedzibie, gdzie szczegółowo omówimy Twój projekt i zaprezentujemy, jak nasze strony internetowe mogą pomóc w rozwoju Twojego biznesu. "
+    />
+    <TwoColumnLeft
+        title="Po co mi strona internetowa?/ Zwiększ zysk swojej firmy"
+        text=" Jeśli szukasz profesjonalnej firmy, która zaprojektuje dla Ciebie nowoczesną i funkcjonalną stronę internetową, trafiłeś we właściwe miejsce. Nasza oferta stron internetowych skierowana jest do firm, które pragną zwiększyć swoją obecność w Internecie i dotrzeć do nowych klientów. Dzięki doświadczeniu w branży web designu oraz znajomości najlepszych praktyk SEO, oferujemy tworzenie stron www, które są nie tylko estetyczne, ale także łatwe w obsłudze i przyjazne dla wyszukiwarek internetowych. Nasze strony internetowe charakteryzują się nowoczesnym designem, intuicyjną nawigacją i responsywnością, co zapewnia doskonałe działanie na różnych urządzeniach - komputerach, tabletach i telefonach. Każdy projekt jest dostosowany do indywidualnych potrzeb klienta oraz specyfiki branży, co pozwala na stworzenie strony, która skutecznie przyciąga uwagę użytkowników i zachęca ich do interakcji. Tworzymy strony internetowe, które są w pełni zoptymalizowane pod kątem SEO. Dzięki temu Twoja strona ma większą szansę na wysoką pozycję w wynikach wyszukiwania Google, co wpływa na większą widoczność Twojej firmy i przyciąga nowych klientów. Oferujemy również kompleksowe usługi związane z aktualizacją, konserwacją i poprawą wydajności stron, aby zapewnić ich długoterminową efektywność. Zapewniamy pełne wsparcie na każdym etapie projektu, od koncepcji po wdrożenie, oraz oferujemy atrakcyjne ceny, które sprawiają, że nasze usługi są dostępne dla firm o różnych budżetach. Skontaktuj się z nami już dziś i przekonaj się, jak nasze strony internetowe mogą pomóc w rozwoju Twojego biznesu!"
+    />
+
+    <ThreeBottom
+        title1="20"
+        subtitle1="lat doświadczenia"
+        text1="Zaufaj naszemu doświadczeniu i powiedz co możemy dla Ciebie zrobić."
+        title2="1300"
+        subtitle2="stron internetowych"
+        text2="Zobacz wybrane realizacje i skorzystaj z naszej oferty."
+        title3="24"
+        subtitle3="miesięcy gwarancji"
+        text3="Masz pewność, że otrzymujesz produkt wysokiej jakości. "
+    />
+    <InnerPagesTwoColumnBg />
+    <OneColumnText />
+    <Footer />
+</SiteLayout>

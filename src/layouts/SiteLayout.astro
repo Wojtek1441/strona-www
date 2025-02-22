@@ -1,18 +1,75 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
 import '../styles/base.css';
+const { pageTitle, desc, keywords } = Astro.props;
+import { SEO } from 'astro-seo';
 ---
 
 <!doctype html>
-<html lang="pl">
+<html
+    lang="pl"
+    dir="ltr"
+>
     <head>
-        <meta charset="UTF-8" />
+        <meta
+            http-equiv="content-type"
+            content="text/html; charset=utf-8"
+        />
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
         />
+
+        <SEO
+            title={pageTitle ?? 'Strony internetowe UK | Sklepy internetowe Anglia i Szkocja Graf.IT'}
+            description={desc}
+            openGraph={{
+                basic: {
+                    title: 'Strony internetowe UK | Sklepy internetowe Anglia i Szkocja Graf.IT',
+                    type: 'website',
+                    image: 'https://raw.githubusercontent.com/Wojtek1441/stronyinternetoweuk/refs/heads/master/logo.png',
+                },
+            }}
+            twitter={{
+                creator: '@Grafit_uk',
+            }}
+            extend={{
+                // extending the default link tags
+                link: [{ rel: 'icon', href: 'favicon.ico' }],
+                // extending the default meta tags
+                meta: [
+                    {
+                        name: 'twitter:image',
+                        content:
+                            'https://raw.githubusercontent.com/Wojtek1441/stronyinternetoweuk/refs/heads/master/logo.png',
+                    },
+                    {
+                        name: 'twitter:title',
+                        content: 'Strony internetowe UK | Sklepy internetowe Anglia i Szkocja Graf.IT',
+                    },
+                    {
+                        name: 'twitter:description',
+                        content: 'Strony internetowe UK | Sklepy internetowe Anglia i Szkocja Graf.IT',
+                    },
+                ],
+            }}
+        />
+        <!-- keywords={keywords} -->
+        <meta
+            property="article:publisher"
+            content="https://www.facebook.com/stronyinternetoweuk"
+        />
+        <meta
+            name="p:domain_verify"
+            content="20da56a4fbebd5e47ae5816bfb6bf984"
+        />
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-MNNDPH3FNQ"
+        ></script>
         <ViewTransitions />
     </head>
+
     <body>
         <slot />
     </body>

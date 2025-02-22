@@ -2,48 +2,6 @@
 import { Icon } from 'astro-icon/components';
 ---
 
-<!-- <footer class="bg-black">
-    <div class="container mx-auto py-10">
-        <div class="columns-3 text-white">
-            <div class="col-md-4">
-                <h3>Oferujemy</h3>
-                <ul>
-                    <li>Strony internetowe</li>
-                    <li>Sklepy internetowe</li>
-                    <li>Drukarnia UK</li>
-                    <li>Marketing internetowy</li>
-                    <li>Pozycjonowanie</li>
-                    <li>Tani Hosting w UK</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <div class="logo">
-                    <a
-                        href="/"
-                        title="Strony www i Sklepy Internetowe UK"
-                    ></a>
-                </div>
-                <p>
-                    Oferujemy eksluzywne strony dla wszystkich,<br />
-                    którzy wierzą w sukces swojej firmy.
-                </p>
-                <p>Adres: Glenacre Street, Glasgow, G45 9DF</p>
-                <p>Tel: 07935 812 988</p>
-                <p>Email: info@graf-it.co.uk</p>
-                <p>FB | TW | Go</p>
-            </div>
-            <div class="col-md-4">
-                <h3>O nas</h3>
-                <ul>
-                    <li>O Firmie</li>
-                    <li>Zespół</li>
-                    <li>Portfolio</li>
-                    <li>Kontakt</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer> -->
 <footer class="mt-8 bg-neutral-900 pt-9">
     <div class="mx-auto w-full container px-4 xl:px-0">
         <div class="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
@@ -51,13 +9,15 @@ import { Icon } from 'astro-icon/components';
                 <p class="text-[18px] font-medium text-white">
                     <img
                         class="w-60 max-w-full"
-                        src="http://grafit.co.uk/grafit-portal/images/logo.png"
+                        src="/src/images/logo.svg"
+                        alt="logo grafit"
                     />
                 </p>
                 <p class="mt-[18px] text-[15px] font-normal text-white/[80%]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, fugit non. Incidunt dolorum adipisci,
-                    tempore asperiores nemo odio facere officiis enim animi placeat eaque nesciunt alias beatae id, at
-                    dicta.
+                    Firma specjalizuje się w tworzeniu profesjonalnych stron internetowych oraz sklepów online, oferując
+                    kompleksową obsługę – od projektu po wdrożenie. Zapewniamy wysoką jakość usług oraz pełne wsparcie
+                    na każdym etapie realizacji. Idealna dla firm szukających skutecznych i funkcjonalnych rozwiązań w
+                    internecie.
                 </p>
                 <div class="mt-[18px] flex gap-4">
                     <a
@@ -108,11 +68,11 @@ import { Icon } from 'astro-icon/components';
                     </div>
                     <div class="ml-[18px]">
                         <a
-                            href="tel:+911800123444"
+                            href="/kontakt"
                             class="font-Inter text-[14px] font-medium text-white"
-                            >+91 1800123444</a
+                            >Kontakt</a
                         >
-                        <p class="font-Inter text-[12px] font-medium text-white">Support Number</p>
+                        <p class="font-Inter text-[12px] font-medium text-white"></p>
                     </div>
                 </div>
                 <div class="mt-[23px] flex">
@@ -132,11 +92,11 @@ import { Icon } from 'astro-icon/components';
                     </div>
                     <div class="ml-[18px]">
                         <a
-                            href="mailto:help@lorem.com"
+                            href="mailto:info@graf-it.co.uk"
                             class="font-Inter text-[14px] font-medium text-[#fff]"
-                            >help@lorem.com</a
+                            >info@graf-it.co.uk</a
                         >
-                        <p class="font-Inter text-[12px] font-medium text-[#fff]">Support Email</p>
+                        <p class="font-Inter text-[12px] font-medium text-[#fff]">Kontakt</p>
                     </div>
                 </div>
                 <div class="mt-[23px] flex">
@@ -155,18 +115,43 @@ import { Icon } from 'astro-icon/components';
                         </svg>
                     </div>
                     <div class="ml-[18px]">
-                        <a
-                            href="mailto:help@lorem.com"
-                            class="font-Inter text-[14px] font-medium text-[#fff]"
-                            >Sub Nerul, Mumbia, India, 123456</a
-                        >
-                        <p class="font-Inter text-[12px] font-medium text-white">Address</p>
+                        <p class="font-Inter text-[14px] font-medium text-[#fff]">Co oferujemy?</p>
+                        <ul>
+                            <li>
+                                <a
+                                    class="font-Inter text-[12px] font-medium text-white"
+                                    href="/strony-www-w-uk"
+                                    >Strony internetowe w UK</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="font-Inter text-[12px] font-medium text-white"
+                                    href="/sklepy-www-w-uk"
+                                    >Sklepy unternetowe w UK</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="font-Inter text-[12px] font-medium text-white"
+                                    href="/polska-drukarnia-w-uk"
+                                    >Polska Drukarnia w UK</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="font-Inter text-[12px] font-medium text-white"
+                                    href="/oferta"
+                                    >Oferta</a
+                                >
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="mt-6 flex w-full flex-col justify-between text-white sm:flex-row md:mt-0 md:max-w-[341px]">
                 <div class="">
-                    <p class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Pages</p>
+                    <p class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Nawigacja</p>
                     <ul>
                         <li class="mt-[15px]">
                             <a
@@ -178,80 +163,46 @@ import { Icon } from 'astro-icon/components';
                         <li class="mt-[15px]">
                             <a
                                 class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                href="/our-tutors"
-                                >News</a
+                                href="o-nas"
+                                >O nas</a
                             >
                         </li>
                         <li class="mt-[15px]">
                             <a
                                 class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                href="/become-a-tutor"
-                                >Contact</a
+                                href="kontakt"
+                                >Kontakt</a
                             >
                         </li>
                         <li class="mt-[15px]">
                             <a
                                 class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                href="/plans-and-pricing"
-                                >Plans and pricing</a
+                                href="oferta"
+                                >Oferta</a
                             >
                         </li>
                         <li class="mt-[15px]">
                             <a
                                 class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                href="/terms-and-conditions"
-                                >Terms and conditions</a
+                                href="/regulamin"
+                                >Regulamin</a
                             >
                         </li>
                         <li class="mt-[15px]">
                             <a
                                 class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                href="/privacy-policy"
-                                >Privcay policy</a
+                                href="/polityka-prywatnosci"
+                                >Polityka prywatności</a
                             >
                         </li>
                     </ul>
-                </div>
-                <div class="mt-6 flex flex-col gap-4 sm:mt-0">
-                    <p class="text-deutziawhite font-inter text-[18px] font-medium">Download the app</p>
-                    <div class="flex gap-4 sm:flex-col">
-                        <a
-                            target="_blank"
-                            href="#"
-                            ><img
-                                alt="facebook icon"
-                                loading="lazy"
-                                width="168"
-                                height="50"
-                                decoding="async"
-                                data-nimg="1"
-                                style="color:transparent"
-                                src="https://www.englishyaari.com/img/google-store.svg"
-                            /></a
-                        ><a
-                            target="_blank"
-                            href="#"
-                            ><img
-                                alt="facebook icon"
-                                loading="lazy"
-                                width="168"
-                                height="50"
-                                decoding="async"
-                                data-nimg="1"
-                                style="color:transparent"
-                                src="https://www.englishyaari.com/img/apple-store.svg"
-                            /></a
-                        >
-                    </div>
                 </div>
             </div>
         </div>
         <hr class="mt-[30px] text-white" />
         <div class="flex items-center justify-center pb-8 pt-[9px] md:py-8">
             <p class="text-[10px] font-normal text-white md:text-[12px]">
-                © Copyright
-                <!-- -->2024
-                <!-- -->, All Rights Reserved by Grafit
+                © Copyright {new Date().getFullYear()} , All Rights Reserved by Grafit
             </p>
         </div>
     </div>

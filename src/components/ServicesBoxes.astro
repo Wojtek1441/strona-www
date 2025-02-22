@@ -1,11 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import icon1 from '../images/icon-01.webp';
+import icon2 from './../images/icon-02.webp';
+import icon3 from './../images/icon-03.webp';
+---
+
 <section class="container mx-auto my-20">
     <h3 class="text-center font-bold text-5xl text-gradient my-20">Co robimy?</h3>
     <div class="columns-1 md:columns-3 gap-4">
         <div class="flex">
-            <img
-                src="http://grafit.co.uk/grafit-portal/images/icon-01.webp"
-                alt="Projektowanie Stron Internetowych"
+            <Image
                 class="size-20 mr-5"
+                alt="Projektowanie Stron Internetowych"
+                src={icon1}
             />
             <div>
                 <p>
@@ -15,10 +22,10 @@
             </div>
         </div>
         <div class="flex">
-            <img
-                src="http://grafit.co.uk/grafit-portal/images/icon-02.webp"
-                alt="Projektowanie Stron Internetowych"
+            <Image
                 class="size-20 mr-5"
+                alt="Projektowanie Sklepów Internetowych"
+                src={icon2}
             />
             <div>
                 <p>
@@ -28,10 +35,10 @@
             </div>
         </div>
         <div class="flex">
-            <img
-                src="http://grafit.co.uk/grafit-portal/images/icon-03.webp"
-                alt="Projektowanie Stron Internetowych"
+            <Image
                 class="size-20 mr-5"
+                alt="Optymalizacja stron internetowych, Upgrade i Hosting UK"
+                src={icon3}
             />
             <div>
                 <p>

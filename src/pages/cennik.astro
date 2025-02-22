@@ -1,0 +1,199 @@
+---
+import Form from '../components/Form.astro';
+import Header from '../components/Header.astro';
+import HeroInner from '../components/HeroInner.astro';
+import HowToStart from '../components/HowToStart.astro';
+import LogoCarousel from '../components/LogoCarousel.astro';
+import OneColumnText from '../components/OneColumnText.astro';
+import Prices from '../components/Prices.astro';
+import ServicesBoxes from '../components/ServicesBoxes.astro';
+import TwoColumnImgRight from '../components/TwoColumnImgRight.astro';
+import Footer from '../layout/footer.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { Image } from 'astro:assets';
+import projektImg from './../images/projekt.webp';
+import TwoColumnLeft from '../components/TwoColumnLeft.astro';
+---
+
+<SiteLayout
+    pageTitle="Cennik"
+    keywords=""
+    desc=""
+>
+    <Header />
+    <HeroInner
+        subtitle="Fachowa Strona zarabia na siebie i Twoją firmę. Zaufaj specjalistom, a my zrobimy resztę!"
+        title1="Co"
+        title2="oferujemy?"
+    />
+    <!-- <LogoCarousel /> -->
+    <div class="w-screen bg-black p-10 mb-14">
+        <div class="flex flex-wrap items-center justify-center max-w-4xl mx-auto gap-4 sm:gap-0">
+            <div
+                class="w-full p-6 bg-black border border-gray-700 rounded-lg sm:w-1/2 bg-opacity-20 sm:rounded-r-none sm:p-8"
+            >
+                <div class="mb-6">
+                    <h3 class="text-2xl font-semibold jakarta text-gray-100 sm:text-4xl">Strona internetowa</h3>
+                </div>
+                <div class="mb-4 space-x-2">
+                    <span class="text-4xl font-bold text-gray-100">Od £30/mc lub £500</span>
+                </div>
+                <ul class="mb-6 space-y-2 text-gray-300">
+                    <li class="flex items-center gap-1.5">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="flex-shrink-0 w-5 h-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                        <span class="">One Project</span>
+                    </li>
+                    <li class="flex items-center gap-1.5">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="flex-shrink-0 w-5 h-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                        <span class="">Limited Designs</span>
+                    </li>
+                    <li class="flex items-center gap-1.5">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="flex-shrink-0 w-5 h-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                        <span class="">Basic Settings</span>
+                    </li>
+                </ul>
+                <a
+                    href="/kontakt"
+                    class="block px-8 py-3 text-sm font-semibold text-center text-gray-100 transition duration-100 bg-white rounded-lg outline-none bg-opacity-10 hover:bg-opacity-20 md:text-base"
+                    >ZAMÓW STRONĘ
+                </a>
+            </div>
+
+            <div class="w-full p-6 rounded-lg shadow-xl sm:w-1/2 bg-gradient-to-br from-blue-600 to-purple-600 sm:p-8">
+                <div class="flex flex-col items-start justify-between gap-4 mb-6 lg:flex-row">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white jakarta sm:text-4xl">Sklep Internetowy</h3>
+                    </div>
+                    <span
+                        class="order-first inline-block px-3 py-1 text-xs font-semibold tracking-wider text-white uppercase bg-black rounded-full lg:order-none bg-opacity-20"
+                        >Go Pro</span
+                    >
+                </div>
+                <div class="mb-4 space-x-2">
+                    <span class="text-4xl font-bold text-white">Od £45/mc</span>
+                    <span class="text-2xl text-indigo-100 line-through">£69/mc</span>
+                </div>
+                <ul class="mb-6 space-y-2 text-indigo-100">
+                    <li class="flex items-center gap-1.5">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="flex-shrink-0 w-5 h-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                        <span class="">Unlimited Projects</span>
+                    </li>
+                    <li class="flex items-center gap-1.5">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="flex-shrink-0 w-5 h-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                        <span class="">Unlimited API calls</span>
+                    </li>
+                    <li class="flex items-center gap-1.5">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="flex-shrink-0 w-5 h-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"
+                                class=""
+                            ></path>
+                        </svg>
+                        <span class="">Advanced Project Settings</span>
+                    </li>
+                    <li class="flex items-center gap-1.5">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="flex-shrink-0 w-5 h-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                        <span class="">Priority Support</span>
+                    </li>
+                </ul>
+                <a
+                    href="/kontakt"
+                    class="block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-white rounded-lg outline-none bg-opacity-20 hover:bg-opacity-30 md:text-base"
+                    >ZAMÓW SKLEP</a
+                >
+            </div>
+        </div>
+    </div>
+    <!--  <ServicesBoxes />
+    <HowToStart />
+    <Testimonials />
+    <Prices />
+    <Form /> -->
+    <TwoColumnImgRight
+        title="Dlaczego jesteśmy najlepsi?"
+        text="Szukasz profesjonalnej firmy z UK, która zaprojektuje nowoczesną i funkcjonalną stronę internetową? Grafit to idealne rozwiązanie dla Ciebie! Nasze strony internetowe wyróżniają się nie tylko atrakcyjną ceną, ale także wysoką jakością wykonania i nowoczesnym designem. Każdy projekt jest indywidualnie dopasowany do potrzeb klienta, zapewniając łatwą i intuicyjną obsługę. Dbamy o to, aby każda strona www była nie tylko estetyczna, ale także funkcjonalna, co przyczynia się do pozytywnego doświadczenia użytkownika i lepszego pozycjonowania w Google. Nasze strony internetowe charakteryzują się responsywnością, szybkością ładowania oraz optymalizacją pod kątem SEO, co sprawia, że Twoja firma zyskuje większą widoczność w internecie. Zapraszamy do kontaktu telefonicznego lub osobistego w naszej warszawskiej siedzibie, gdzie szczegółowo omówimy Twój projekt i zaprezentujemy, jak nasze strony internetowe mogą pomóc w rozwoju Twojego biznesu. "
+    />
+    <TwoColumnLeft
+        title="Po co mi strona internetowa?"
+        text=" Jeśli szukasz profesjonalnej firmy, która zaprojektuje dla Ciebie nowoczesną i funkcjonalną stronę internetową, trafiłeś we właściwe miejsce. Nasza oferta stron internetowych skierowana jest do firm, które pragną zwiększyć swoją obecność w Internecie i dotrzeć do nowych klientów. Dzięki doświadczeniu w branży web designu oraz znajomości najlepszych praktyk SEO, oferujemy tworzenie stron www, które są nie tylko estetyczne, ale także łatwe w obsłudze i przyjazne dla wyszukiwarek internetowych. Nasze strony internetowe charakteryzują się nowoczesnym designem, intuicyjną nawigacją i responsywnością, co zapewnia doskonałe działanie na różnych urządzeniach - komputerach, tabletach i telefonach. Każdy projekt jest dostosowany do indywidualnych potrzeb klienta oraz specyfiki branży, co pozwala na stworzenie strony, która skutecznie przyciąga uwagę użytkowników i zachęca ich do interakcji. Tworzymy strony internetowe, które są w pełni zoptymalizowane pod kątem SEO. Dzięki temu Twoja strona ma większą szansę na wysoką pozycję w wynikach wyszukiwania Google, co wpływa na większą widoczność Twojej firmy i przyciąga nowych klientów. Oferujemy również kompleksowe usługi związane z aktualizacją, konserwacją i poprawą wydajności stron, aby zapewnić ich długoterminową efektywność. Zapewniamy pełne wsparcie na każdym etapie projektu, od koncepcji po wdrożenie, oraz oferujemy atrakcyjne ceny, które sprawiają, że nasze usługi są dostępne dla firm o różnych budżetach. Skontaktuj się z nami już dziś i przekonaj się, jak nasze strony internetowe mogą pomóc w rozwoju Twojego biznesu!"
+    />
+    <OneColumnText
+        title="Dlaczego jesteśmy najlepsi?"
+        subtitle="Od nas oczekuj więcej niż oferuje konkurencja."
+        text="Jesteśmy pełnym pomysłów zespołem, gotowym zrealizować każdy nawet najbardziej wymagający projekt. Nasza praca nie jest dla nas tylko zadaniem do wykonania, ale przed wszystkim kolejną sposobnością, żeby kreować rzeczywistość wokół nas. Tworzymy strony internetowe, które oddziaływają na klienta i zapadają w pamięć. Możemy  zrealizować dowolny  projekt, a jeżeli nie macie Państwu projektu  przygotujemy go specjalnie dla Was. Naszym celem jest tworzenie unikatowych, jedynych w swoim rodzaju serwisów, doskonale dobranych do potrzeb klienta i spełniających najwyższe standardy. W naszych projektach znajdziecie Państwo odbicie najnowszych trendów oraz technologii, możecie  być pewni, że produkt przygotowany przez nas będzie  niepowtarzalny i najwyższej jakości. Wierzymy w siłę reklamy, promocji i internetu, jesteśmy przekonani, że internet jest najlepszym medium służącym promocji i rozpowszechnieniu produktów i usług."
+    />
+    <Footer />
+</SiteLayout>

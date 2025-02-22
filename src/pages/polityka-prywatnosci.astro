@@ -1,0 +1,96 @@
+---
+import Form from '../components/Form.astro';
+import Header from '../components/Header.astro';
+import HeroInner from '../components/HeroInner.astro';
+import HowToStart from '../components/HowToStart.astro';
+import LogoCarousel from '../components/LogoCarousel.astro';
+import OneColumnText from '../components/OneColumnText.astro';
+import Prices from '../components/Prices.astro';
+import ServicesBoxes from '../components/ServicesBoxes.astro';
+import TwoColumnImgRight from '../components/TwoColumnImgRight.astro';
+import Footer from '../layout/footer.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { Image } from 'astro:assets';
+import projektImg from './../images/projekt.webp';
+---
+
+<SiteLayout>
+    <Header />
+    <HeroInner
+        subtitle="Fachowa Strona zarabia na siebie i Twoją firmę. Zaufaj specjalistom, a my zrobimy resztę!"
+        title1="Polityka"
+        title2="prywatności "
+    />
+    <article class="relative my-12 flex w-full flex-col items-center sm:mt-24">
+        <div class="container text-center">
+            <h1>Polityka Prywatności</h1>
+
+            Firma Grafit szanuje prywatność swoich użytkowników i zapewnia ochronę danych osobowych, zgodnie z
+            obowiązującymi przepisami prawa, w tym z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 w
+            sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych (RODO). Poniżej przedstawiamy
+            zasady, na jakich gromadzimy i przetwarzamy dane osobowe użytkowników naszych usług.
+
+            <h2>1. Administrator Danych Osobowych</h2>
+            <p>
+                Administratorem danych osobowych użytkowników strony internetowej [adres strony internetowej] jest firma
+                Grafit, z siedzibą w [adres siedziby], NIP [numer NIP], REGON [numer REGON].
+            </p>
+            <h2></h2>2. Dane Osobowe, Które Zbieramy
+        </div>
+        <p></p>Zbieramy dane osobowe, które użytkownicy dobrowolnie przekazują w ramach korzystania z naszej strony
+        internetowej, w tym:
+    </article>
+    Imię i nazwisko Adres e-mail Numer telefonu Inne dane niezbędne do świadczenia usług, np. adres korespondencyjny
+    <h2>3. Cel Przetwarzania Danych</h2>
+    <p>Dane osobowe przetwarzamy w następujących celach:</p>
+
+    <p>
+        Świadczenie usług zgodnie z umową lub zapytaniem (np. odpowiedzi na zapytania ofertowe, realizacja zamówienia)
+    </p>
+    Wysyłanie informacji marketingowych, jeśli użytkownik wyraził na to zgodę Utrzymywanie kontaktu z klientami, obsługa
+    zgłoszeń i reklamacji Analiza korzystania z naszej strony internetowej w celach statystycznych i poprawy jakości świadczonych
+    usług
+    <h2>4. Podstawy Prawne Przetwarzania Danych</h2>
+    <p>Przetwarzanie danych osobowych odbywa się na podstawie następujących podstaw prawnych:</p>
+
+    <p>
+        Zgoda użytkownika (np. w przypadku subskrypcji newslettera, kontaktu za pomocą formularza) Wykonanie umowy (np.
+        realizacja zamówienia) Obowiązek prawny (np. w zakresie przechowywania danych na potrzeby podatkowe) Uzasadniony
+        interes administratora danych (np. w celach marketingowych, rozwoju usług)
+    </p>
+    <h2>
+        5. Udostępnianie Danych Osobowych Twoje dane osobowe mogą być udostępniane następującym kategoriom odbiorców:
+
+        <p>
+            Podwykonawcom i dostawcom usług technicznych (np. hosting, analiza danych) Firmom zajmującym się obsługą
+            płatności, kurierskim dostarczaniem zamówień Organom ścigania, sądom lub innym instytucjom, jeśli wymagają
+            tego przepisy prawa
+        </p>6. Przechowywanie Danych Osobowych
+    </h2>
+    Dane osobowe przechowywane są przez okres niezbędny do realizacji celów, dla których zostały zebrane, a po tym okresie
+    mogą być przechowywane, jeśli jest to wymagane przez przepisy prawa (np. przepisy podatkowe).
+
+    <h2>7. Twoje Prawa</h2>
+    Masz prawo do: Dostępu do swoich danych osobowych Sprostowania, usunięcia lub ograniczenia przetwarzania danych Przenoszenia
+    danych do innego administratora Wniesienia sprzeciwu wobec przetwarzania danych Wycofania zgody na przetwarzanie danych,
+    jeśli przetwarzanie odbywało się na podstawie zgody Aby skorzystać z tych praw, skontaktuj się z nami za pośrednictwem
+    [adres e-mail] lub [numer telefonu]. 8. Bezpieczeństwo Danych Osobowych</SiteLayout
+>
+Firma Grafit dokłada wszelkich starań, aby dane osobowe były odpowiednio chronione przed nieautoryzowanym dostępem, zmianą,
+ujawnieniem lub zniszczeniem. W tym celu stosujemy środki techniczne i organizacyjne zgodne z najlepszymi standardami branżowymi.
+9. Pliki Cookies Nasza strona internetowa może wykorzystywać pliki cookies w celu poprawy jakości świadczonych usług oraz
+analizowania aktywności użytkowników na stronie. Pliki cookies są wykorzystywane wyłącznie do celów statystycznych i funkcjonalnych.
+Użytkownik ma możliwość zarządzania plikami cookies za pomocą ustawień swojej przeglądarki internetowej. Można je w każdej
+chwili usunąć lub zablokować. 10. Zmiany w Polityce Prywatności Firma Grafit zastrzega sobie prawo do zmiany niniejszej Polityki
+Prywatności w przypadku zmiany przepisów prawa lub zmiany sposobu przetwarzania danych. O wszelkich zmianach użytkownicy
+zostaną poinformowani za pośrednictwem strony internetowej.
+
+<!-- <LogoCarousel /> -->
+<!--  <ServicesBoxes />
+    <HowToStart />
+    <Testimonials />
+    <Prices />
+    <Form /> -->
+
+<OneColumnText />
+<Footer />

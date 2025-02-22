@@ -1,0 +1,137 @@
+---
+import Form from '../components/Form.astro';
+import Header from '../components/Header.astro';
+import HeroInner from '../components/HeroInner.astro';
+import HowToStart from '../components/HowToStart.astro';
+import LogoCarousel from '../components/LogoCarousel.astro';
+import OneColumnText from '../components/OneColumnText.astro';
+import Prices from '../components/Prices.astro';
+import ServicesBoxes from '../components/ServicesBoxes.astro';
+import TwoColumnImgRight from '../components/TwoColumnImgRight.astro';
+import Footer from '../layout/footer.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { Image } from 'astro:assets';
+import projektImg from './../images/projekt.webp';
+---
+
+<SiteLayout
+    pageTitle="Strony internetowe UK, Sklepy internetowe Londyn GrafIT - Regulamin"
+    keywords="Regulamin Tworzenia Stron internetowych Anglia"
+    desc="Regulamin Tworzenia Stron internetowych Anglia"
+>
+    <Header />
+    <HeroInner
+        subtitle="Fachowa Strona zarabia na siebie i Twoją firmę. Zaufaj specjalistom, a my zrobimy resztę!"
+        title1="Regulamin"
+        title2="usług "
+    />
+    <article class="relative my-12 flex w-full flex-col items-center sm:mt-24">
+        <div class="container text-center">
+            <h1><span style="color: #00ccff;">I. Obowiązki Usługodawcy</span></h1>
+            <p><br /><br /></p>
+            <h2>
+                1. Usługodawca zobowiązuje się do świadczenia Usług z należytą starannością, zgodnie z warunkami
+                określonymi w Regulaminie, Umowie lub innych zobowiązaniach.<br />2. Usługodawca dołoży wszelkich starań
+                dla ochrony swojego Systemu przed niepowołanym dostępem i innymi zagrożeniami. <br />3. W przypadku
+                Usług dostępnych za pomocą hasła, Usługodawca zobowiązuje się do jego przekazania w sposób ustalony
+                przez obie strony, z zachowaniem zasad bezpieczeństwa. 4. Usługodawca zastrzega sobie prawo zerwania
+                umowy w przypadku niewywiązywania sie klienta ze swoich obowiązków.<br /><br />
+            </h2>
+            <h1><span style="color: #00ccff;">II. Ochrona danych osobowych oraz poufność informacji</span></h1>
+            <h2><br /><br /></h2>
+            <h2>
+                1. Podpisanie Umowy jest równoznaczne z wyrażeniem przez Usługobiorcę zgody na przetwarzania danych
+                osobowych zgodnie z Ustawą o Ochronie i Przetwarzaniu Danych Osobowych 2. Usługobiorca oświadcza, że
+                znane jest mu prawo do wglądu i modyfikacji danych osobowych.<br />3. Usługodawca zobowiązuje się do
+                przestrzegania tajemnicy danych osobowych Usługobiorcy oraz do nieudostępniania ich innym podmiotom.<br
+                />4. O ile Usługobiorca tego nie zastrzeże, Usługodawca ma prawo do opublikowania podstawowych danych
+                Usługobiorcy (nazwa firmy, adres strony internetowej) na swojej liście referencyjnej .<br />5. O ile
+                Usługobiorca tego nie zastrzeże, Usługodawca ma prawo do opublikowania podstawowych danych Usługodawcy w
+                stopce witryny internetowej.
+            </h2>
+            <h1>&nbsp;</h1>
+            <h1><span style="color: #00ccff;">III. Obowiązki Usługobiorcy</span></h1>
+            <h2><br /><br /></h2>
+            <h2>
+                1. Usługobiorca zobowiązuje się do nieudostępniania na swoich stronach WWW, serwerach FTP treści
+                obraźliwych, pornograficznych, o charakterze nielegalnym lub innych zabronionych obowiązującym prawem.<br
+                />2. Usługobiorca zobowiązuje się do niewykorzystywania Systemu Usługodawcy do kolportowania Spamu.<br
+                />3. Usługobiorca zobowiązuje się do przestrzegania zasad przyzwoitego zachowania w Internecie w czasie
+                korzystania z Systemu Usługodawcy.<br />4. Usługobiorca zobowiązuje się do zapewnienia należytej ochrony
+                otrzymanym od Usługodawcy hasłom. Usługodawca nie ponosi odpowiedzialności za dostęp do Systemu dokonany
+                przy pomocy prawidłowego hasła.<br />5. Usługobiorca zobowiązuje się do wnoszenia opłat wskazanych w
+                Cenniku i Umowie we wskazanych terminach.<br /><br /><strong
+                    ><span style="color: #00ccff;">IV. Wyłączenia odpowiedzialności</span><br /><br />1. Usługodawca nie
+                    ponosi odpowiedzialności za treści prezentowane na stronach WWW lub udostępniane na serwerach FTP
+                    lub kolportowane poprzez system poczty elektronicznej przez Usługobiorcę. 2. Usługodawca nie ponosi
+                    odpowiedzialności za przerwy w dostępie do Systemu, spowodowane prze czynniki niezależne od
+                    Usługodawcy, w szczególności przez dostawców łącz internetowych, energii lub innych mediów
+                    niezbędnych do prawidłowego działania Systemu.</strong
+                >
+            </h2>
+            <p><span style="color: #00ccff;"><strong></strong></span>&nbsp;</p>
+            <h1><span style="color: #00ccff;">V. Zamówienie</span></h1>
+            <h2>
+                1. Usługobiorca zobowiązany jest do wniesienia opłaty z góry za przyszły projekt graficzny lub druk i do
+                podpisania umowy na zlecenie<strong>. </strong>Czas realizacji jest ustalany przez Usługodawcę.
+            </h2>
+            <h2>
+                2. Usługobiorca ma 2 dni na akceptację projektu. Jeżeli Usługobiorca nie zgłosi żadnych uwag w przeciągu
+                1 dnia roboczego od daty zaakceptowania projektu przyjmuje się, że projekt zaakceptował i Usługobiorca
+                zobowiązany jest pokryć koszty zamówienia, nawet, jeśli anuluje zamówienie po upływie 2 dni.
+            </h2>
+            <h2><strong>VI. </strong><strong>Utrzymanie Strony Internetowej</strong></h2>
+            <h2>
+                1. Oplata roczna pokrywa koszty serwera, domeny oraz jednego konta emailowego i jest ustalana przez
+                Usługodawcę.
+            </h2>
+            <h2>
+                3. Aktualizacja<strong> </strong>strony internetowej jest wykonywana &nbsp;na specjalne zamówienie i za
+                dodatkowa opłatą— £15/ h
+            </h2>
+            <h2>
+                4. Pozycjonowanie podstawowe wliczone jest w cenę każdej witryny CMS (z samodzielną edycją treści).
+                Istnieje możliwość dodatkowego pozycjonowania za dopłatą. Przy pozycjonowaniu podstawowym za pozycje w
+                wyszukiwarkach Usługodawca nie odpowiada.
+            </h2>
+            <h2>
+                5. Treść do witryny internetowej musi by dostarczona przez Usługobiorcę. Zmiany w treści dokonywane
+                przez usługodawcę są&nbsp; dokonane na dodatkową opłatą.
+            </h2>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <h2>
+                <span style="color: #00ccff;"><strong>VI</strong><strong>. P</strong></span><strong
+                    ><span style="color: #00ccff;">ostępowanie reklamacyjne</span><br /><br /></strong
+                >1. Reklamacją jest zgłoszenie przez Usługobiorcę roszczenia z tytułu niewykonania lub nienależytego
+                wykonania Usług przez Usługodawcę.<br />2. Wszelkie reklamacje dotyczące Usług świadczonych przez
+                Usługodawcę muszą zostać zgłoszone pisemnie na adres siedziby Usługodawcy<br />3. Prawidłowo zgłoszone
+                reklamacje są rozpatrywane w przeciągu 14 dni roboczych.<br />4. W przypadku pozytywnego rozpatrzenia
+                reklamacji przez Usługodawcę, Usługobiorca ma prawo do zmniejszenia opłaty abonamentowej. Opłata jest
+                zmniejszana proporcjonalnie do czasu trwania awarii, przy czym przyjmuje się, że awaria trwająca
+                nieprzerwanie przez okres co najmniej 4 godzin powoduje zmniejszenie opłaty abonamentowej o kwotę
+                odpowiadającą jednej dobie.<br />5. Zwrot kwoty należnej Usługobiorcy w wyniku pozytywnego rozpatrzenia
+                reklamacji przez Usługodawcę następuje poprzez potrącenie wymienionej kwoty z kolejnej należnej
+                Usługodawcy opłaty abonamentowej. W przypadku wypowiedzenia Umowy przez Usługobiorcę, kwota ta zostanie
+                przelana na rachunek bankowy wskazany przez Usługobiorcę w ciągu 14 dni o upłynięcia terminu
+                wypowiedzenia.<br />6. Przy ustalaniu faktycznego czasu trwania przerwy w dostawie Usług, przyjmuje się
+                dane zarejestrowane przez system Usługodawcy.7. Zmniejszenie opłaty abonamentowej spowodowane pozytywnym
+                rozpatrzeniem reklamacji wyczerpuje całkowicie odpowiedzialność Usługodawcy.7. Zmniejszenie opłaty
+                abonamentowej spowodowane pozytywnym rozpatrzeniem reklamacji wyczerpuje całkowicie odpowiedzialność
+                Usługodawcy.<br />7. Zmniejszenie opłaty abonamentowej spowodowane pozytywnym rozpatrzeniem reklamacji
+                wyczerpuje całkowicie odpowiedzialność Usługodawcy.<br />8. Ze względu na charakter usługi produkty
+                drukowane nie podlegają zwrotom. <br />
+            </h2>
+        </div>
+    </article>
+
+    <!-- <LogoCarousel /> -->
+    <!--  <ServicesBoxes />
+    <HowToStart />
+    <Testimonials />
+    <Prices />
+    <Form /> -->
+
+    <OneColumnText />
+    <Footer />
+</SiteLayout>

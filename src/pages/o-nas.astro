@@ -10,26 +10,57 @@ import ServicesBoxes from '../components/ServicesBoxes.astro';
 import TwoColumnImgRight from '../components/TwoColumnImgRight.astro';
 import Footer from '../layout/footer.astro';
 import SiteLayout from '../layouts/SiteLayout.astro';
+import { Image } from 'astro:assets';
+import projektImg from './../images/projekt.webp';
+import ThreeBottom from '../components/ThreeBottom.astro';
+import InnerPagesTwoColumnBg from '../components/InnerPagesTwoColumnBg.astro';
+const pageTitle = 'O nas';
 ---
 
-<SiteLayout>
+<SiteLayout
+    pageTitle="Graf.IT- informacje o firmie, tworzymy i projektujemy strony internetowe, sklepy internetowe oraz strony flash. Zapraszamy!"
+    desc="Tworzenie i pozcyjonowanie stron internetowych w uk, sklepy internetowe uk. Graf it to najlepsza promocja dla twojej firmy!"
+    keywords="strony internetowe uk, sklepy internetowe uk, jak założyc sklep internetowy uk, wizytówki uk, ulotki uk, plakaty uk, pozycjonowanie stron uk, projektowanie loga uk"
+>
     <Header />
-    <HeroInner />
+    <HeroInner
+        subtitle="Fachowa Strona zarabia na siebie i Twoją firmę. Zaufaj specjalistom, a my zrobimy resztę!"
+        title1="Budujemy skuteczne rozwiązania"
+        title2="internetowe "
+        title3="od 2007 roku"
+    />
+
     <!-- <LogoCarousel /> -->
     <div class="container mx-auto my-20 px-5 md:px-0">
         <p class="text-justify">
-            Strony internetowe to dziś kluczowy element w budowaniu obecności firm w Internecie. Dla wielu
-            przedsiębiorstw strona www to znacznie więcej niż tylko wizytówka — pełni rolę narzędzia do szybkiego i
-            efektywnego komunikowania się z klientami. Dobrze zaprojektowana strona internetowa potrafi przyciągnąć
-            użytkowników, zatrzymać ich na dłużej i skutecznie zaprezentować ofertę firmy, co w efekcie przekłada się na
-            wzrost liczby zapytań i transakcji. Kluczowe znaczenie ma tutaj zarówno estetyka, jak i funkcjonalność
-            strony. Strona internetowa musi być łatwa w nawigacji, interaktywna, szybka oraz responsywna na różnych
-            urządzeniach, by zapewniała pozytywne doświadczenie użytkowników. Optymalizacja witryny pod kątem SEO, czyli
-            odpowiednie wykorzystanie słów kluczowych, takich jak "strony internetowe", pozwala na osiągnięcie wyższej
-            pozycji w wynikach wyszukiwania Google. Dzięki temu firma zyskuje większą widoczność, a potencjalni klienci
-            łatwiej znajdą i skontaktują się z nią. Warto zatem zadbać o profesjonalne podejście do projektowania stron
-            internetowych, które będzie nie tylko atrakcyjne wizualnie, ale także funkcjonalne, szybkie i dobrze
-            pozycjonowane.
+            Jesteśmy dynamicznie rozwijającą się agencją interaktywną, która specjalizuje się w tworzeniu innowacyjnych
+            rozwiązań digitalowych, dostosowanych do indywidualnych potrzeb naszych klientów. Z pasją <strong
+                >łączymy nowoczesne technologie, kreatywność i doświadczenie</strong
+            >, aby dostarczać projekty, które przyciągają uwagę i angażują odbiorców. Nasze podejście opiera się na
+            bliskiej współpracy z klientami, dzięki czemu możemy w pełni zrozumieć ich cele i oczekiwania. Stawiamy na
+            transparentność, <strong>profesjonalizm oraz indywidualne podejście do każdego projektu</strong>.
+            Niezależnie od tego, czy chodzi o kompleksową budowę strony internetowej, strategię marketingową, czy rozwój
+            aplikacji mobilnej, nasz zespół zawsze dąży do perfekcji.
+        </p>
+        <p>
+            Jesteśmy młodą, prężnie działającą firmą w zakresie grafiki komputerowej i tworzeniu stron internetowych.
+            Specjalizujemy się w projektowaniu sklepów internetowych. Zajmujemy się tworzeniem stron wwww na terenie
+            Glasgow, Szkocji, Anglii, Walii oraz Irlandii Północnej a także Polski. Oferujemy również hosting-
+            utrzymanie stron internetowych na serwerach, optymalizacjęi pozycjonowanie www. Specjalizujemy się również w
+            druku- drukujemy: ulotki, wizytówki, plakaty czy papier firmowy. Przygotujemy i umieścimy reklamę w prasie
+            na terenie UK. Zajmujemy się również fotografią: okazjonalną, reklamową, koncertową, dysponujemy
+            profesjonalnym studiem. Jesteśmy pełnym pomysłów zespołem, gotowym zrealizować każdy nawet najbardziej
+            wymagający projekt. Nasza praca nie jest dla nas tylko zadaniem do wykonania, ale przed wszystkim kolejną
+            sposobnością, żeby kreować rzeczywistość wokół nas. Tworzymy strony internetowe, które oddziaływają na
+            klienta i zapadają w pamięć. Możemy zrealizować dowolny projekt, a jeżeli nie macie Państwu projektu
+            przygotujemy go specjalnie dla Was. Naszym celem jest tworzenie unikatowych, jedynych w swoim rodzaju
+            serwisów, doskonale dobranych do potrzeb klienta i spełniających najwyższe standardy.
+        </p>
+        <p>
+            W naszych projektach znajdziecie Państwo odbicie najnowszych trendów oraz technologii, możecie być pewni, że
+            produkt przygotowany przez nas będzie niepowtarzalny i najwyższej jakości. Wierzymy w siłę reklamy, promocji
+            i internetu, jesteśmy przekonani, że internet jest najlepszym medium służącym promocji i rozpowszechnieniu
+            produktów i usług.
         </p>
     </div>
     <!--  <ServicesBoxes />
@@ -37,42 +68,19 @@ import SiteLayout from '../layouts/SiteLayout.astro';
     <Testimonials />
     <Prices />
     <Form /> -->
+    <TwoColumnImgRight
+        title="Dlaczego jesteśmy najlepsi?"
+        subtitle="Od nas oczekuj więcej niż oferuje konkurencja."
+        text="Szukasz profesjonalnej firmy z UK, która zaprojektuje nowoczesną i funkcjonalną stronę internetową? Grafit to idealne rozwiązanie dla Ciebie! Nasze strony internetowe wyróżniają się nie tylko atrakcyjną ceną, ale także wysoką jakością wykonania i nowoczesnym designem. Każdy projekt jest indywidualnie dopasowany do potrzeb klienta, zapewniając łatwą i intuicyjną obsługę. Dbamy o to, aby każda strona www była nie tylko estetyczna, ale także funkcjonalna, co przyczynia się do pozytywnego doświadczenia użytkownika i lepszego pozycjonowania w Google. Nasze strony internetowe charakteryzują się responsywnością, szybkością ładowania oraz optymalizacją pod kątem SEO, co sprawia, że Twoja firma zyskuje większą widoczność w internecie. Zapraszamy do kontaktu telefonicznego lub osobistego w naszej warszawskiej siedzibie, gdzie szczegółowo omówimy Twój projekt i zaprezentujemy, jak nasze strony internetowe mogą pomóc w rozwoju Twojego biznesu. "
+    />
+
     <section>
-        <div class="columns-1 md:columns-2">
-            <div class="ml-16 text-justify">
-                <p class="font-bold text-xl mt-6 text-blue-500">Od nas oczekuj więcej niż oferuje konkurencja.</p>
-                <h4 class="text-gradient font-bold text-4xl mb-4 leading-normal">Dlaczego jesteśmy najlepsi?</h4>
-                <p class="flex items-center gap-3">
-                    <span class="text-9xl text-fuchsia-900 font-black">20</span> doświadczenia przy tworzeniu stron www oraz
-                    marketingu internetowym
-                </p>
-                <p>
-                    Szukasz profesjonalnej firmy z UK, która zaprojektuje nowoczesną i funkcjonalną stronę internetową?
-                    Grafit to idealne rozwiązanie dla Ciebie! Nasze strony internetowe wyróżniają się nie tylko
-                    atrakcyjną ceną, ale także wysoką jakością wykonania i nowoczesnym designem. Każdy projekt jest
-                    indywidualnie dopasowany do potrzeb klienta, zapewniając łatwą i intuicyjną obsługę. Dbamy o to, aby
-                    każda strona www była nie tylko estetyczna, ale także funkcjonalna, co przyczynia się do pozytywnego
-                    doświadczenia użytkownika i lepszego pozycjonowania w Google. Nasze strony internetowe
-                    charakteryzują się responsywnością, szybkością ładowania oraz optymalizacją pod kątem SEO, co
-                    sprawia, że Twoja firma zyskuje większą widoczność w internecie. Zapraszamy do kontaktu
-                    telefonicznego lub osobistego w naszej warszawskiej siedzibie, gdzie szczegółowo omówimy Twój
-                    projekt i zaprezentujemy, jak nasze strony internetowe mogą pomóc w rozwoju Twojego biznesu. Y
-                </p>
-            </div>
-            <div>
-                <img
-                    src="http://grafit.co.uk/grafit-portal/images/projekt.webp"
-                    class="img-big-responsive"
-                />
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="columns-1 md:columns-2">
+        <div class="columns-2 md:columns-2 gap-0">
             <div class="text-justify">
-                <img
-                    src="http://grafit.co.uk/grafit-portal/images/projekt.webp"
-                    class="img-big-responsive"
+                <Image
+                    class="max-w-full"
+                    alt="logo"
+                    src={projektImg}
                 />
                 <div class="ml-8 mr-16">
                     <p class="font-bold text-xl mt-6 text-blue-500">Od nas oczekuj więcej niż oferuje konkurencja.</p>
@@ -102,7 +110,18 @@ import SiteLayout from '../layouts/SiteLayout.astro';
             </div>
         </div>
     </section>
-
+    <ThreeBottom
+        title1="20"
+        subtitle1="lat doświadczenia"
+        text1="Zaufaj naszemu doświadczeniu i powiedz co możemy dla Ciebie zrobić."
+        title2="1300"
+        subtitle2="stron internetowych"
+        text2="Zobacz wybrane realizacje i skorzystaj z naszej oferty."
+        title3="24"
+        subtitle3="miesięcy gwarancji"
+        text3="Masz pewność, że otrzymujesz produkt wysokiej jakości. "
+    />
+    <InnerPagesTwoColumnBg />
     <OneColumnText />
     <Footer />
 </SiteLayout>

@@ -7,10 +7,10 @@
         gwarancję na stronę internetową, a przyszłe modernizacje masz zawarte w ramach naszej współpracy. Zapytaj
         dlaczego nasze strony to gwarancja sukcesu.
     </p>
-    <div class="form">
+    <div class="text-center max-lg:w-full w-1/2 mx-auto">
         <form
             class="flex-col justify-center gap-7 mx-auto"
-            action="https://www.form-to-email.com/api/s/hM8-f_2WRix6"
+            action="https://www.form-to-email.com/api/s/JZyA1QySaCrr"
             method="POST"
         >
             <div
@@ -75,8 +75,9 @@
                         required
                     />
                     <a
+                        title="contact button"
                         id="kontakt-btn"
-                        class="btn"
+                        class="text-white bg-gradient-to-r from-indigo-500 via-blue-500 to-pink-500 hover:bg-[position:_100%_100%] bg-[size:_200%] transition-all focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium text-sm px-5 py-3 text-center ml-3 mb-2"
                         >Potwierdź</a
                     >
                 </div>
@@ -86,7 +87,7 @@
                 id="pageToShow3"
             >
                 <h3 class="font-semibold text-2xl text-center mt-4 mb-7">Jaki masz budżet?</h3>
-                <div class='flex gap-4 mx-auto data-nextpage="3"'>
+                <div class='flex gap-4 mx-auto data-nextpage="3" justify-center'>
                     <input
                         id="budzet-type-1"
                         type="radio"
@@ -110,27 +111,33 @@
                 id="pageToShow4"
             >
                 <h3 class="font-semibold text-2xl text-center mt-4 mb-7">Jaki jest deadline?</h3>
-                <div
-                    class="page"
-                    data-nextpage="4"
-                >
-                    <input
-                        id="strony-type"
-                        type="radio"
-                        value="Strony"
-                        name="Strony"
-                        class="absolute opacity-0 w-0 h-0"
-                    />
-                    <label for="strony-type"> 1 miesiąc</label>
-                    <input
-                        id="sklepy-type"
-                        type="radio"
-                        value="Sklep"
-                        name="Strony"
-                        class="absolute opacity-0 w-0 h-0"
-                    />
-                    <label for="sklepy-type"> 1 rok</label>
-                    <button value="submit">Wyślij zapytanie</button>
+                <div>
+                    <div
+                        class="page flex gap-4 mx-auto justify-center"
+                        data-nextpage="4"
+                    >
+                        <input
+                            id="strony-type"
+                            type="radio"
+                            value="Strony"
+                            name="Strony"
+                            class="absolute opacity-0 w-0 h-0"
+                        />
+                        <label for="strony-type"> 1 miesiąc</label>
+                        <input
+                            id="sklepy-type"
+                            type="radio"
+                            value="Sklep"
+                            name="Strony"
+                            class="absolute opacity-0 w-0 h-0"
+                        />
+                        <label for="sklepy-type"> 1 rok</label>
+                    </div>
+                    <button
+                        value="submit"
+                        class="text-white bg-gradient-to-r from-indigo-500 via-blue-500 to-pink-500 hover:bg-[position:_100%_100%] bg-[size:_200%] transition-all focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium text-sm px-5 py-3 text-center ml-3 mb-2"
+                        >Wyślij zapytanie</button
+                    >
                 </div>
             </fieldset>
             <!-- <fieldset class="hidden" id="pageToShow5">

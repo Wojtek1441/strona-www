@@ -1,0 +1,51 @@
+---
+import Header from '../components/Header.astro';
+import HeroInner from '../components/HeroInner.astro';
+import InnerPagesTwoColumnBg from '../components/InnerPagesTwoColumnBg.astro';
+import OneColumnText from '../components/OneColumnText.astro';
+import ThreeBottom from '../components/ThreeBottom.astro';
+import TwoColumnImgRight from '../components/TwoColumnImgRight.astro';
+import TwoColumnLeft from '../components/TwoColumnLeft.astro';
+import Footer from '../layout/footer.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+---
+
+<SiteLayout pageTitle="Błąd 404">
+    <Header />
+    <HeroInner
+        subtitle="Nie ma strony, której szukałeś."
+        title1="Coś poszło nie tak. Błąd 404"
+        title2=""
+    />
+    <!-- <LogoCarousel /> -->
+    <div class="container mx-auto my-20 px-5 md:px-0 text-center">
+        <p class="mb-8">Proponujemy żebyś przeszedł do strony głównej</p>
+        <a
+            href="/"
+            type="button"
+            class="mt-6 text-white bg-gradient-to-r from-indigo-500 via-blue-500 to-pink-500 hover:bg-[position:_100%_100%] bg-[size:_200%] transition-all focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium text-sm px-5 py-3 text-center mb-2"
+        >
+            WRÓĆ NA STRONĘ GŁÓWNĄ
+        </a>
+    </div>
+    <!--  <ServicesBoxes />
+    <HowToStart />
+    <Testimonials />
+    <Prices />
+    <Form /> -->
+
+    <ThreeBottom
+        title1="20"
+        subtitle1="lat doświadczenia"
+        text1="Zaufaj naszemu doświadczeniu i powiedz co możemy dla Ciebie zrobić."
+        title2="1300"
+        subtitle2="stron internetowych"
+        text2="Zobacz wybrane realizacje i skorzystaj z naszej oferty."
+        title3="24"
+        subtitle3="miesięcy gwarancji"
+        text3="Masz pewność, że otrzymujesz produkt wysokiej jakości. "
+    />
+    <InnerPagesTwoColumnBg />
+    <OneColumnText />
+    <Footer />
+</SiteLayout>

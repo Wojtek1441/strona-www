@@ -1,0 +1,250 @@
+---
+import Form from '../components/Form.astro';
+import Header from '../components/Header.astro';
+import HeroInner from '../components/HeroInner.astro';
+import HowToStart from '../components/HowToStart.astro';
+import LogoCarousel from '../components/LogoCarousel.astro';
+import OneColumnText from '../components/OneColumnText.astro';
+import Prices from '../components/Prices.astro';
+import ServicesBoxes from '../components/ServicesBoxes.astro';
+import TwoColumnImgRight from '../components/TwoColumnImgRight.astro';
+import Footer from '../layout/footer.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { Image } from 'astro:assets';
+import projektImg from './../images/projekt.webp';
+import TwoColumnLeft from '../components/TwoColumnLeft.astro';
+---
+
+<SiteLayout
+    pageTitle="Strony internetowe UK, Sklepy internetowe Londyn GrafIT - Opinie Klientów Stron Internetowych w UK, Anglii, Szkocji"
+    keywords="opinie klientów, dotyczy stron www, opinie firmy uk, opinie agencji reklamowej uk, najlepsza agencja reklamowa uk, najlepszy informatyk uk, najlepszy grafik uk, firma graficzna uk"
+    desc="Szukasz firmy która stworzy twoją www? Zobacz opinie naszych Klientów Stron Internetowych w UK, Anglii, Szkocji."
+>
+    <Header />
+    <HeroInner
+        subtitle="Fachowa Strona zarabia na siebie i Twoją firmę. Zaufaj specjalistom, a my zrobimy resztę!"
+        title1="Opinie"
+        title2="klientów"
+    />
+    <!-- <LogoCarousel /> -->
+    <div class="container mx-auto px-5 md:px-0">
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-12 mx-auto">
+                <div class="flex flex-wrap -m-4">
+                    <div class="p-4 md:w-1/2 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                class="block w-5 h-5 text-gray-400 mb-4"
+                                viewBox="0 0 975.036 975.036"
+                            >
+                                <path
+                                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                                ></path>
+                            </svg>
+                            <p class="leading-relaxed mb-6">
+                                "Jestem bardzo zadowolony z współpracy z firmą Graf.It. Tworzenie naszego sklepu
+                                internetowego przebiegło bardzo sprawnie. Zespół wykazał się dużym profesjonalizmem i
+                                indywidualnym podejściem do naszego projektu. Dzięki ich doświadczeniu i kreatywności
+                                nasza strona nie tylko działa bez zarzutu, ale również świetnie wygląda. Polecam ich
+                                usługi każdemu, kto potrzebuje nowoczesnej i funkcjonalnej witryny!"
+                            </p>
+                            <a class="inline-flex items-center">
+                                <img
+                                    alt="testimonial"
+                                    src="https://dummyimage.com/110x110"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                                />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900">Martin Campbell</span>
+                                    <span class="text-gray-500 text-sm">Salon BMW Londyn</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/2 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                class="block w-5 h-5 text-gray-400 mb-4"
+                                viewBox="0 0 975.036 975.036"
+                            >
+                                <path
+                                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                                ></path>
+                            </svg>
+                            <p class="leading-relaxed mb-6">
+                                Firma Graf.It stworzyła dla nas sklep internetowy, który nie tylko wygląda świetnie, ale
+                                również działa bez zarzutu. Zastosowanie nowoczesnych rozwiązań technologicznych
+                                pozwoliło nam na łatwe zarządzanie sklepem oraz poprawę jakości obsługi klienta. Dzięki
+                                temu projektowi zyskaliśmy nowych klientów, a nasza sprzedaż wzrosła. Jesteśmy bardzo
+                                zadowoleni z efektów współpracy!
+                            </p>
+                            <a class="inline-flex items-center">
+                                <img
+                                    alt="testimonial"
+                                    src="https://dummyimage.com/110x110"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                                />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900"></span>
+                                    <span class="text-gray-500 text-sm">Strona Internetowa</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="p-4 md:w-1/2 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                class="block w-5 h-5 text-gray-400 mb-4"
+                                viewBox="0 0 975.036 975.036"
+                            >
+                                <path
+                                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                                ></path>
+                            </svg>
+                            <p class="leading-relaxed mb-6">
+                                "Jestem bardzo zadowolony z współpracy z firmą Graf.It. Tworzenie naszego sklepu
+                                internetowego przebiegło bardzo sprawnie. Zespół wykazał się dużym profesjonalizmem i
+                                indywidualnym podejściem do naszego projektu. Dzięki ich doświadczeniu i kreatywności
+                                nasza strona nie tylko działa bez zarzutu, ale również świetnie wygląda. Polecam ich
+                                usługi każdemu, kto potrzebuje nowoczesnej i funkcjonalnej witryny!"
+                            </p>
+                            <a class="inline-flex items-center">
+                                <img
+                                    alt="testimonial"
+                                    src="https://dummyimage.com/110x110"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                                />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900">Martin Campbell</span>
+                                    <span class="text-gray-500 text-sm">Salon BMW Londyn</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/2 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                class="block w-5 h-5 text-gray-400 mb-4"
+                                viewBox="0 0 975.036 975.036"
+                            >
+                                <path
+                                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                                ></path>
+                            </svg>
+                            <p class="leading-relaxed mb-6">
+                                Firma Graf.It to doskonały wybór dla każdego, kto szuka wysokiej jakości strony
+                                internetowej. Ich umiejętności techniczne i estetyczne połączenie sprawiły, że nasz
+                                sklep internetowy zyskał nowych klientów i znacząco poprawił naszą sprzedaż. Zespół
+                                zawsze służył pomocą na każdym etapie tworzenia witryny, a komunikacja była szybka i
+                                klarowna. Zdecydowanie warto skorzystać z ich usług.
+                            </p>
+                            <a class="inline-flex items-center">
+                                <img
+                                    alt="testimonial"
+                                    src="https://dummyimage.com/110x110"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                                />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900">Ryszard Kopka</span>
+                                    <span class="text-gray-500 text-sm">Sklep Internetowy</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="p-4 md:w-1/2 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                class="block w-5 h-5 text-gray-400 mb-4"
+                                viewBox="0 0 975.036 975.036"
+                            >
+                                <path
+                                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                                ></path>
+                            </svg>
+                            <p class="leading-relaxed mb-6">
+                                "Graf.It wykazał się nie tylko profesjonalizmem, ale także innowacyjnością przy
+                                tworzeniu naszej strony internetowej. Po kilku rozmowach z zespołem udało się stworzyć
+                                stronę, która nie tylko spełnia nasze oczekiwania, ale także wyróżnia się na tle
+                                konkurencji. Są to ludzie, którzy potrafią słuchać klienta i dostosować projekt do jego
+                                potrzeb. Bardzo polecam ich usługi!"
+                            </p>
+                            <a class="inline-flex items-center">
+                                <img
+                                    alt="testimonial"
+                                    src="https://dummyimage.com/110x110"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                                />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900">Ann Lee</span>
+                                    <span class="text-gray-500 text-sm">Cleaning Services</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/2 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                class="block w-5 h-5 text-gray-400 mb-4"
+                                viewBox="0 0 975.036 975.036"
+                            >
+                                <path
+                                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                                ></path>
+                            </svg>
+                            <p class="leading-relaxed mb-6">
+                                Kiedy zaczynaliśmy współpracę z firmą Graf.It, zależało nam na szybkiej realizacji i
+                                prostym procesie. Firma stanęła na wysokości zadania, dostarczając naszą stronę
+                                internetową w wyznaczonym terminie. Cały proces, od pierwszego kontaktu po finalny
+                                projekt, przebiegał sprawnie i profesjonalnie. Zdecydowanie polecamy ich usługi!
+                            </p>
+                            <a class="inline-flex items-center">
+                                <img
+                                    alt="testimonial"
+                                    src="https://dummyimage.com/110x110"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                                />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900">Marzena</span>
+                                    <span class="text-gray-500 text-sm">Sklep Internetowy</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--  <ServicesBoxes />
+    <HowToStart />
+    <Testimonials />
+    <Prices />
+    <Form /> -->
+    <TwoColumnImgRight
+        title="Dlaczego jesteśmy najlepsi?"
+        text="Szukasz profesjonalnej firmy z UK, która zaprojektuje nowoczesną i funkcjonalną stronę internetową? Grafit to idealne rozwiązanie dla Ciebie! Nasze strony internetowe wyróżniają się nie tylko atrakcyjną ceną, ale także wysoką jakością wykonania i nowoczesnym designem. Każdy projekt jest indywidualnie dopasowany do potrzeb klienta, zapewniając łatwą i intuicyjną obsługę. Dbamy o to, aby każda strona www była nie tylko estetyczna, ale także funkcjonalna, co przyczynia się do pozytywnego doświadczenia użytkownika i lepszego pozycjonowania w Google. Nasze strony internetowe charakteryzują się responsywnością, szybkością ładowania oraz optymalizacją pod kątem SEO, co sprawia, że Twoja firma zyskuje większą widoczność w internecie. Zapraszamy do kontaktu telefonicznego lub osobistego w naszej warszawskiej siedzibie, gdzie szczegółowo omówimy Twój projekt i zaprezentujemy, jak nasze strony internetowe mogą pomóc w rozwoju Twojego biznesu. "
+    />
+    <TwoColumnLeft
+        title="Po co mi strona internetowa?"
+        text=" Jeśli szukasz profesjonalnej firmy, która zaprojektuje dla Ciebie nowoczesną i funkcjonalną stronę internetową, trafiłeś we właściwe miejsce. Nasza oferta stron internetowych skierowana jest do firm, które pragną zwiększyć swoją obecność w Internecie i dotrzeć do nowych klientów. Dzięki doświadczeniu w branży web designu oraz znajomości najlepszych praktyk SEO, oferujemy tworzenie stron www, które są nie tylko estetyczne, ale także łatwe w obsłudze i przyjazne dla wyszukiwarek internetowych. Nasze strony internetowe charakteryzują się nowoczesnym designem, intuicyjną nawigacją i responsywnością, co zapewnia doskonałe działanie na różnych urządzeniach - komputerach, tabletach i telefonach. Każdy projekt jest dostosowany do indywidualnych potrzeb klienta oraz specyfiki branży, co pozwala na stworzenie strony, która skutecznie przyciąga uwagę użytkowników i zachęca ich do interakcji. Tworzymy strony internetowe, które są w pełni zoptymalizowane pod kątem SEO. Dzięki temu Twoja strona ma większą szansę na wysoką pozycję w wynikach wyszukiwania Google, co wpływa na większą widoczność Twojej firmy i przyciąga nowych klientów. Oferujemy również kompleksowe usługi związane z aktualizacją, konserwacją i poprawą wydajności stron, aby zapewnić ich długoterminową efektywność. Zapewniamy pełne wsparcie na każdym etapie projektu, od koncepcji po wdrożenie, oraz oferujemy atrakcyjne ceny, które sprawiają, że nasze usługi są dostępne dla firm o różnych budżetach. Skontaktuj się z nami już dziś i przekonaj się, jak nasze strony internetowe mogą pomóc w rozwoju Twojego biznesu!"
+    />
+    <OneColumnText
+        title="Dlaczego jesteśmy najlepsi?"
+        subtitle="Od nas oczekuj więcej niż oferuje konkurencja."
+        text="Jesteśmy pełnym pomysłów zespołem, gotowym zrealizować każdy nawet najbardziej wymagający projekt. Nasza praca nie jest dla nas tylko zadaniem do wykonania, ale przed wszystkim kolejną sposobnością, żeby kreować rzeczywistość wokół nas. Tworzymy strony internetowe, które oddziaływają na klienta i zapadają w pamięć. Możemy  zrealizować dowolny  projekt, a jeżeli nie macie Państwu projektu  przygotujemy go specjalnie dla Was. Naszym celem jest tworzenie unikatowych, jedynych w swoim rodzaju serwisów, doskonale dobranych do potrzeb klienta i spełniających najwyższe standardy. W naszych projektach znajdziecie Państwo odbicie najnowszych trendów oraz technologii, możecie  być pewni, że produkt przygotowany przez nas będzie  niepowtarzalny i najwyższej jakości. Wierzymy w siłę reklamy, promocji i internetu, jesteśmy przekonani, że internet jest najlepszym medium służącym promocji i rozpowszechnieniu produktów i usług."
+    />
+    <Footer />
+</SiteLayout>

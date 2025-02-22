@@ -1,5 +1,6 @@
 ---
-import Form from '../components/Form.astro';
+import FormSimple from '../components/FormSimple.astro';
+import Head from '../components/Head.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import HowToStart from '../components/HowToStart.astro';
@@ -15,21 +16,40 @@ import Footer from '../layout/footer.astro';
 import SiteLayout from '../layouts/SiteLayout.astro';
 ---
 
-<SiteLayout>
+<!-- <Head /> -->
+<SiteLayout
+    desc="Tworzenie i pozcyjonowanie stron internetowych w uk, sklepy internetowe uk. Graf it to najlepsza promocja dla twojej firmy!"
+    keywords="strony internetowe uk, sklepy internetowe uk, jak założyc sklep internetowy uk, wizytówki uk, ulotki uk, plakaty uk, pozycjonowanie stron uk, projektowanie loga uk"
+    pageTitle="Strony internetowe UK, Sklepy internetowe Londyn GrafIT - Home"
+>
     <Header />
     <Hero />
     <div style="background-image: url(http://grafit.co.uk/grafit-portal/images/background.png); position: relative;">
         <LogoCarousel />
-
         <ServicesBoxes />
         <HowToStart />
         <Testimonials />
         <Prices />
-        <Form />
-        <TwoColumnImgRight />
-        <OneColumnText />
-        <TwoColumnLeft />
-        <ProofCompany />
+        <FormSimple />
+        <TwoColumnImgRight
+            title="Dlaczego jesteśmy najlepsi?"
+            subtitle="Od nas oczekuj więcej niż oferuje konkurencja."
+            text="Nie tylko projektujemy strony internetowe, ale także wspieramy twoją firme na każdym kroku. Oferujemy trening z zakresu obsługi strony, instalujemy potrzebne oprogramowanie, pomagamy przy administracji stron. Dlatego nasi klienci do nas wracają i nas polecają. Sprawdź co myślą o nas inni. Chcesz wyróżnić swoją firmę w internecie? Oferujemy projektowanie stron internetowych zgodnie z najnowszymi trendami i potrzebami rynku. Tworzymy strony internetowe dla firm, które są nie tylko estetyczne, ale także intuicyjne i funkcjonalne. Zajmujemy się zarówno budową stron internetowych od podstaw, jak i ich optymalizacją. Niezależnie od Twojego budżetu, możemy zaprojektować tanie strony internetowe, które spełnią Twoje oczekiwania i przyciągną klientów."
+            showBtn={true}
+        />
+        <OneColumnText
+            title="Dlaczego jesteśmy najlepsi?"
+            subtitle="Od nas oczekuj więcej niż oferuje konkurencja."
+            text="Nie tylko projektujemy strony internetowe, ale także wspieramy twoją firme na każdym kroku. Oferujemy trening z zakresu obsługi strony, instalujemy potrzebne oprogramowanie, pomagamy przy administracji stron. Dlatego nasi klienci do nas wracają i nas polecają. Sprawdź co myślą o nas inni. Chcesz wyróżnić swoją firmę w internecie? Oferujemy projektowanie stron internetowych zgodnie z najnowszymi trendami i potrzebami rynku. Tworzymy strony internetowe dla firm, które są nie tylko estetyczne, ale także intuicyjne i funkcjonalne. Zajmujemy się zarówno budową stron internetowych od podstaw, jak i ich optymalizacją. Niezależnie od Twojego budżetu, możemy zaprojektować tanie strony internetowe, które spełnią Twoje oczekiwania i przyciągną klientów."
+        />
+        <TwoColumnLeft
+            title="Po co mi strona internetowa?"
+            subtitle="Od nas oczekuj więcej niż oferuje konkurencja."
+            text="Bo każda nasza strona internetowa jest unikatowa, dopasowany do indywidualnych potrzeb. Za rozsądną cenę zaoferujemy Ci najlepszą promocję Twojej Firmy. Jesteśmy profesjonalistami proponujemy kompleksowy zakres promocji Twojej Firmy, od stron internetowych, poprzez druk materiałów promocyjnych aż po pozycjonowanie stron www w UK. Graf.IT oferuje wsparcie Twojej Firmy na każdym kroku, oferując najwyższej jakości usługi. Oferujemy strony internetowe uk, sklepy internetowe uk, tani hosting a także druk ulotek, wizytówek, plakatów oraz wielu innych materiałów reklamowych."
+            text2="Wiele osób zadaje sobie pytanie jakie korzyści płyną z posiadania profesjonalnej strony internetowej- czy warto? czy sie opłaca? Otóż nie koniecznie dla wszystkich Firm w UK polecane są profesjonalne strony www. Jeśli jesteś sprzedawcą na lokalnym targu nie potrzebujesz strony- twoi klienci stale wracają do Ciebie po te same produkty. W dzisiejszych czasach 90% firm nie ogranicza się jednak do lokalnego rynku i stara się 'wyjść' do klienta. Jeśli dlatego chcesz stworzyć profesjonalną stronę internetową- to dobrze trafiłeś. Oferujemy najwyższej jakości usługi - a poziom obsługi klienta wprowadziliśmy na najlepsze standardy. Wiemy, jak robić dobre strony internetowe, dlatego jeśli szukasz kogoś zaufanego- na kim można zawsze polegać - zapraszamy!"
+        />
+
+        <ProofCompany isRed="true" />
     </div>
     <Footer />
 </SiteLayout>

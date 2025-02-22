@@ -1,0 +1,47 @@
+---
+import { Image } from 'astro:assets';
+import projektImg from './../images/projekt.webp';
+import { boolean } from 'astro:schema';
+const { title, subtitle, text, text2 } = Astro.props;
+const showBtn = Astro.props;
+---
+
+<section class="bg-blue-900 py-10">
+    <div class="container mx-auto">
+        <div class="columns-1 md:columns-2 gap-0 pb-8">
+            <div class="mx-16 text-justify">
+                <p class="font-bold text-white text-xl mt-6">Śmiało! Skontaktuj się z nami</p>
+                <h4 class="text-gradient font-bold text-4xl mb-4 leading-normal">Rozmowa nic nie kosztuje!</h4>
+                <ul class="text-white">
+                    <li>Chcesz uzyskać wycenę?</li>
+                    <li>Chcesz umówić spotkanie?</li>
+                    <li>Potrzebujesz skutecznej strony www?</li>
+                    <li>Napisz lub zadzwoń do nas!</li>
+                </ul>
+                <a
+                    href="kontakt.html"
+                    class="block w-fit mt-6 text-white bg-gradient-to-r from-indigo-500 via-blue-500 to-pink-500 hover:bg-[position:_100%_100%] bg-[size:_200%] transition-all focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium text-sm px-5 py-3 text-center mb-2"
+                >
+                    SKONTAKTUJ SIĘ Z NAMI
+                </a>
+            </div>
+            <div class="mx-16 text-justify">
+                <p class="font-bold text-xl mt-6 text-blue-500">subtitle</p>
+                <h4 class="text-gradient font-bold text-4xl mb-4 leading-normal">title</h4>
+                <ul>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                </ul>
+                <a
+                    href="kontakt.html"
+                    type="button"
+                    class="mt-6 text-white bg-gradient-to-r from-indigo-500 via-blue-500 to-pink-500 hover:bg-[position:_100%_100%] bg-[size:_200%] transition-all focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium text-sm px-5 py-3 text-center mb-2"
+                >
+                    ZAMÓW BEZPŁATNĄ WYCENĘ
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

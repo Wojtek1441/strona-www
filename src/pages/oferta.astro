@@ -1,0 +1,128 @@
+---
+import Form from '../components/Form.astro';
+import Header from '../components/Header.astro';
+import HeroInner from '../components/HeroInner.astro';
+import HowToStart from '../components/HowToStart.astro';
+import LogoCarousel from '../components/LogoCarousel.astro';
+import OneColumnText from '../components/OneColumnText.astro';
+import Prices from '../components/Prices.astro';
+import ServicesBoxes from '../components/ServicesBoxes.astro';
+import TwoColumnImgRight from '../components/TwoColumnImgRight.astro';
+import Footer from '../layout/footer.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { Image } from 'astro:assets';
+import projektImg from './../images/projekt.webp';
+import TwoColumnLeft from '../components/TwoColumnLeft.astro';
+import InnerPagesTwoColumnBg from '../components/InnerPagesTwoColumnBg.astro';
+import ThreeBottom from '../components/ThreeBottom.astro';
+const { title, desc, keywords } = Astro.props;
+---
+
+<SiteLayout
+    pageTitle="Graf.IT- informacje o firmie, tworzymy i projektujemy strony internetowe, sklepy internetowe oraz strony flash. Zapraszamy!"
+    desc="Tworzenie i pozcyjonowanie stron internetowych w uk, sklepy internetowe uk. Graf it to najlepsza promocja dla twojej firmy!"
+    keywords="strony internetowe uk, sklepy internetowe uk, jak założyc sklep internetowy uk, wizytówki uk, ulotki uk, plakaty uk, pozycjonowanie stron uk, projektowanie loga uk"
+>
+    <Header />
+    <HeroInner
+        subtitle="Fachowa Strona zarabia na siebie i Twoją firmę. Zaufaj specjalistom, a my zrobimy resztę!"
+        title1="Co"
+        title2="oferujemy?"
+    />
+    <!-- <LogoCarousel /> -->
+    <div class="container mx-auto my-20 px-5 md:px-0">
+        <p class="text-justify">
+            Strony internetowe to dziś kluczowy element w budowaniu obecności firm w Internecie. Dla wielu
+            przedsiębiorstw strona www to znacznie więcej niż tylko wizytówka — pełni rolę narzędzia do szybkiego i
+            efektywnego komunikowania się z klientami. Dobrze zaprojektowana strona internetowa potrafi przyciągnąć
+            użytkowników, zatrzymać ich na dłużej i skutecznie zaprezentować ofertę firmy, co w efekcie przekłada się na
+            wzrost liczby zapytań i transakcji. Kluczowe znaczenie ma tutaj zarówno estetyka, jak i funkcjonalność
+            strony. Strona internetowa musi być łatwa w nawigacji, interaktywna, szybka oraz responsywna na różnych
+            urządzeniach, by zapewniała pozytywne doświadczenie użytkowników. Optymalizacja witryny pod kątem SEO, czyli
+            odpowiednie wykorzystanie słów kluczowych, takich jak "strony internetowe", pozwala na osiągnięcie wyższej
+            pozycji w wynikach wyszukiwania Google. Dzięki temu firma zyskuje większą widoczność, a potencjalni klienci
+            łatwiej znajdą i skontaktują się z nią. Warto zatem zadbać o profesjonalne podejście do projektowania stron
+            internetowych, które będzie nie tylko atrakcyjne wizualnie, ale także funkcjonalne, szybkie i dobrze
+            pozycjonowane.
+        </p>
+    </div>
+    <div class="container mx-auto my-20 px-5 md:px-0">
+        <ul>
+            <li>
+                <a
+                    title="Strony internetowe Londync"
+                    href="/oferta/strony-internetowe-londyn"
+                    >Strony internetowe Londyn</a
+                >
+            </li>
+            <li>
+                <a
+                    title="Strony internetowe Warszawa"
+                    href="/oferta/strony-internetowe-warszawa"
+                    >Strony internetowe Warszawa</a
+                >
+            </li>
+            <li>
+                <a
+                    title="Darmowe Strony UK"
+                    href="/darmowe-strony-internetowe-uk"
+                    >Darmowe Strony UK</a
+                >
+            </li>
+            <li>
+                <a
+                    title="Ulotki skladane"
+                    href="/polska-drukarnia-uk/ulotki-skladane"
+                    >Ulotki skladane</a
+                >
+            </li>
+            <li>
+                <a
+                    title="Wizytówki"
+                    href="/polska-drukarnia-uk/wizytowki"
+                    >Wizytówki</a
+                >
+            </li>
+            <li>
+                <a
+                    title="Zestawy firmowe"
+                    href="/polska-drukarnia-uk/zestawy-firmowe"
+                    >Zestawy firmowe</a
+                >
+            </li>
+        </ul>
+    </div>
+    <!--  <ServicesBoxes />
+    <HowToStart />
+    <Testimonials />
+    <Prices />
+    <Form /> -->
+    <TwoColumnImgRight
+        showPlural="true"
+        title="Dlaczego jesteśmy najlepsi?"
+        text="Szukasz profesjonalnej firmy z UK, która zaprojektuje nowoczesną i funkcjonalną stronę internetową? Grafit to idealne rozwiązanie dla Ciebie! Nasze strony internetowe wyróżniają się nie tylko atrakcyjną ceną, ale także wysoką jakością wykonania i nowoczesnym designem. Każdy projekt jest indywidualnie dopasowany do potrzeb klienta, zapewniając łatwą i intuicyjną obsługę. Dbamy o to, aby każda strona www była nie tylko estetyczna, ale także funkcjonalna, co przyczynia się do pozytywnego doświadczenia użytkownika i lepszego pozycjonowania w Google. Nasze strony internetowe charakteryzują się responsywnością, szybkością ładowania oraz optymalizacją pod kątem SEO, co sprawia, że Twoja firma zyskuje większą widoczność w internecie. Zapraszamy do kontaktu telefonicznego lub osobistego w naszej warszawskiej siedzibie, gdzie szczegółowo omówimy Twój projekt i zaprezentujemy, jak nasze strony internetowe mogą pomóc w rozwoju Twojego biznesu. "
+    />
+    <TwoColumnLeft
+        title="Po co mi strona internetowa?/ Zwiększ zysk swojej firmy"
+        text=" Jeśli szukasz profesjonalnej firmy, która zaprojektuje dla Ciebie nowoczesną i funkcjonalną stronę internetową, trafiłeś we właściwe miejsce. Nasza oferta stron internetowych skierowana jest do firm, które pragną zwiększyć swoją obecność w Internecie i dotrzeć do nowych klientów. Dzięki doświadczeniu w branży web designu oraz znajomości najlepszych praktyk SEO, oferujemy tworzenie stron www, które są nie tylko estetyczne, ale także łatwe w obsłudze i przyjazne dla wyszukiwarek internetowych. Nasze strony internetowe charakteryzują się nowoczesnym designem, intuicyjną nawigacją i responsywnością, co zapewnia doskonałe działanie na różnych urządzeniach - komputerach, tabletach i telefonach. Każdy projekt jest dostosowany do indywidualnych potrzeb klienta oraz specyfiki branży, co pozwala na stworzenie strony, która skutecznie przyciąga uwagę użytkowników i zachęca ich do interakcji. Tworzymy strony internetowe, które są w pełni zoptymalizowane pod kątem SEO. Dzięki temu Twoja strona ma większą szansę na wysoką pozycję w wynikach wyszukiwania Google, co wpływa na większą widoczność Twojej firmy i przyciąga nowych klientów. Oferujemy również kompleksowe usługi związane z aktualizacją, konserwacją i poprawą wydajności stron, aby zapewnić ich długoterminową efektywność. Zapewniamy pełne wsparcie na każdym etapie projektu, od koncepcji po wdrożenie, oraz oferujemy atrakcyjne ceny, które sprawiają, że nasze usługi są dostępne dla firm o różnych budżetach. Skontaktuj się z nami już dziś i przekonaj się, jak nasze strony internetowe mogą pomóc w rozwoju Twojego biznesu!"
+    />
+    <OneColumnText
+        title="Dlaczego jesteśmy najlepsi?"
+        subtitle="Od nas oczekuj więcej niż oferuje konkurencja."
+        text="Jesteśmy pełnym pomysłów zespołem, gotowym zrealizować każdy nawet najbardziej wymagający projekt. Nasza praca nie jest dla nas tylko zadaniem do wykonania, ale przed wszystkim kolejną sposobnością, żeby kreować rzeczywistość wokół nas. Tworzymy strony internetowe, które oddziaływają na klienta i zapadają w pamięć. Możemy  zrealizować dowolny  projekt, a jeżeli nie macie Państwu projektu  przygotujemy go specjalnie dla Was. Naszym celem jest tworzenie unikatowych, jedynych w swoim rodzaju serwisów, doskonale dobranych do potrzeb klienta i spełniających najwyższe standardy. W naszych projektach znajdziecie Państwo odbicie najnowszych trendów oraz technologii, możecie  być pewni, że produkt przygotowany przez nas będzie  niepowtarzalny i najwyższej jakości. Wierzymy w siłę reklamy, promocji i internetu, jesteśmy przekonani, że internet jest najlepszym medium służącym promocji i rozpowszechnieniu produktów i usług."
+    />
+    <ThreeBottom
+        title1="20"
+        subtitle1="lat doświadczenia"
+        text1="Zaufaj naszemu doświadczeniu i powiedz co możemy dla Ciebie zrobić."
+        title2="1300"
+        subtitle2="stron internetowych"
+        text2="Zobacz wybrane realizacje i skorzystaj z naszej oferty."
+        title3="24"
+        subtitle3="miesięcy gwarancji"
+        text3="Masz pewność, że otrzymujesz produkt wysokiej jakości. "
+    />
+    <InnerPagesTwoColumnBg />
+    <OneColumnText />
+    <Footer />
+</SiteLayout>

@@ -1,0 +1,209 @@
+---
+import Form from '../components/Form.astro';
+import Header from '../components/Header.astro';
+import HeroInner from '../components/HeroInner.astro';
+import HowToStart from '../components/HowToStart.astro';
+import LogoCarousel from '../components/LogoCarousel.astro';
+import OneColumnText from '../components/OneColumnText.astro';
+import Prices from '../components/Prices.astro';
+import ServicesBoxes from '../components/ServicesBoxes.astro';
+import TwoColumnImgRight from '../components/TwoColumnImgRight.astro';
+import Footer from '../layout/footer.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { Image } from 'astro:assets';
+import figand from './../images/realizacje/figand4.png';
+import garage from './../images/realizacje/ap-garage.png';
+import heaven from './../images/realizacje/heaven-furniture.png';
+import bestweld from './../images/realizacje/bestweld.png';
+import homemake from './../images/realizacje/homemake.png';
+import margita from './../images/realizacje/margita.png';
+import zwiazekkarpatczykow from './../images/realizacje/zwiazek-karpatczykow.png';
+import piomar from './../images/realizacje/piomar.png';
+import ec from './../images/realizacje/ec.png';
+---
+
+<SiteLayout
+    pageTitle=""
+    keywords=""
+    desc=""
+>
+    <Header />
+    <HeroInner
+        subtitle="Fachowa Strona zarabia na siebie i Twoją firmę. Zaufaj specjalistom, a my zrobimy resztę!"
+        title1="Nasze"
+        title2="realizacje"
+    />
+    <!-- <LogoCarousel /> -->
+    <div class="container mx-auto my-20 px-5 md:px-0">
+        <div class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
+            <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+                <Image
+                    class="h-full w-full object-cover"
+                    alt="Figand Polska"
+                    src={figand}
+                />
+            </div>
+            <div
+                class="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12"
+            >
+                <div class="flex flex-col p-12 md:px-16">
+                    <h2 class="text-2xl font-medium uppercase text-pink-800 lg:text-4xl">Figand Polska</h2>
+                    <p class="mt-4">
+                        Mieliśmy przyjemność stworzyć stronę internetową oraz markę Figandu - jednego z największych w
+                        Polsce producentów mleka, śmietany, kefirów, maślanki, twarogów i serów twardych.
+                    </p>
+                    <div class="mt-8">
+                        <a
+                            href="https://figand.com.pl/"
+                            class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-pink-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48"
+                            >Read More</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative flex flex-col items-center mx-auto lg:flex-row lg:max-w-5xl lg:mt-40 xl:max-w-6xl">
+            <div
+                class="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:right-0 lg:mt-20 lg:mr-20 xl:mt-24 xl:mr-12"
+            >
+                <div class="flex flex-col p-12 md:px-16">
+                    <h2 class="text-2xl font-medium uppercase text-pink-800 lg:text-4xl">AP Garage</h2>
+                    <p class="mt-4">
+                        Mieliśmy przyjemność stworzyć stronę internetową oraz markę Figandu - jednego z największych w
+                        Polsce producentów mleka, śmietany, kefirów, maślanki, twarogów i serów twardych.
+                    </p>
+                    <div class="mt-8">
+                        <a
+                            href="https://figand.com.pl/"
+                            class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-pink-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48"
+                            >Read More</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+                <Image
+                    class="h-full w-full object-cover"
+                    alt="AP Garage"
+                    src={garage}
+                />
+            </div>
+        </div>
+        <div class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
+            <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+                <Image
+                    class="h-full w-full object-cover"
+                    alt="Heaven Furniture"
+                    src={heaven}
+                />
+            </div>
+            <div
+                class="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12"
+            >
+                <div class="flex flex-col p-12 md:px-16">
+                    <h2 class="text-2xl font-medium uppercase text-pink-800 lg:text-4xl">Heaven Furniture</h2>
+                    <p class="mt-4">
+                        Mieliśmy przyjemność stworzyć stronę internetową oraz markę Figandu - jednego z największych w
+                        Polsce producentów mleka, śmietany, kefirów, maślanki, twarogów i serów twardych.
+                    </p>
+                    <div class="mt-8">
+                        <a
+                            href="https://www.heaven-furniture.co.uk/"
+                            class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-pink-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48"
+                            >Read More</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative flex flex-col items-center mx-auto lg:flex-row lg:max-w-5xl lg:mt-40 xl:max-w-6xl">
+            <div
+                class="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:right-0 lg:mt-20 lg:mr-20 xl:mt-24 xl:mr-12"
+            >
+                <div class="flex flex-col p-12 md:px-16">
+                    <h2 class="text-2xl font-medium uppercase text-pink-800 lg:text-4xl">Best Weld Ltd</h2>
+                    <p class="mt-4">
+                        Best Weld to nie tylko usługi spawalnicze, ale przede wszystkim produkcja schodów, ogrodzeń i
+                        innych elementów stalowych.
+                    </p>
+                    <div class="mt-8">
+                        <a
+                            href="https://bestweld.co.uk"
+                            class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-pink-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48"
+                            >Read More</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+                <Image
+                    class="h-full w-full object-cover"
+                    alt="Best Weld Ltd"
+                    src={bestweld}
+                />
+            </div>
+        </div>
+        <div class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
+            <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+                <Image
+                    class="h-full w-full object-cover"
+                    alt="Home Garden Ornaments"
+                    src={homemake}
+                />
+            </div>
+            <div
+                class="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12"
+            >
+                <div class="flex flex-col p-12 md:px-16">
+                    <h2 class="text-2xl font-medium uppercase text-pink-800 lg:text-4xl">Home Garden Ornaments</h2>
+                    <p class="mt-4">
+                        Home Garden Ornaments to producent doniczek i akcesorii ogrodowych. Mieliśmy przyjemność
+                        współtworzyc marke dla firmy oraz zbudowaliśmy sklep internetowy.
+                    </p>
+                    <div class="mt-8">
+                        <a
+                            href="https://homegardenornaments.co.uk/"
+                            class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-pink-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48"
+                            >Read More</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative flex flex-col items-center mx-auto lg:flex-row lg:max-w-5xl lg:mt-40 xl:max-w-6xl">
+            <div
+                class="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:right-0 lg:mt-20 lg:mr-20 xl:mt-24 xl:mr-12"
+            >
+                <div class="flex flex-col p-12 md:px-16">
+                    <h2 class="text-2xl font-medium uppercase text-pink-800 lg:text-4xl">Piomar Ltd</h2>
+                    <p class="mt-4">
+                        Mieliśmy przyjemność stworzyć stronę internetową oraz markę Figandu - jednego z największych w
+                        Polsce producentów mleka, śmietany, kefirów, maślanki, twarogów i serów twardych.
+                    </p>
+                    <div class="mt-8">
+                        <a
+                            href="https://piomarltd.com/"
+                            class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-pink-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48"
+                            >Read More</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+                <Image
+                    class="h-full w-full object-cover"
+                    alt="Piomar"
+                    src={piomar}
+                />
+            </div>
+        </div>
+    </div>
+    <!--  <ServicesBoxes />
+    <HowToStart />
+    <Testimonials />
+    <Prices />
+    <Form /> -->
+
+    <OneColumnText />
+    <Footer />
+</SiteLayout>
