@@ -23,6 +23,7 @@ import { SEO } from 'astro-seo';
         <SEO
             title={pageTitle ?? 'Strony internetowe UK | Sklepy internetowe Anglia i Szkocja Graf.IT'}
             description={desc}
+            canonical={Astro.props.canonical}
             openGraph={{
                 basic: {
                     title: 'Strony internetowe UK | Sklepy internetowe Anglia i Szkocja Graf.IT',

@@ -4,11 +4,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                textFont: ['"Poppins"', 'sans-serif'],
-                sans: ['Poppins'],
-                serif: ['Poppins'],
-                display: ['Poppins'],
-                body: ['"Poppins"'],
+                sans: ['Poppins', 'sans-serif'],
             },
             colors: {
                 white: '#ffffff',
